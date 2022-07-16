@@ -128,7 +128,7 @@
 	padding: 1em;
 	padding-left: 12em;
 	margin-left: 0;
-  
+	background-color: none;
 	
 }
 .btn-custom-left{
@@ -210,6 +210,7 @@
 }
 .header-txt-pri p{
 	line-height: 1.5em;
+	padding: 1em;
 	font-size:1.2em;
 	margin-top: 2em;
 }
