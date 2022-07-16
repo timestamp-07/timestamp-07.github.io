@@ -94,3 +94,39 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
 	padding-top: 2em;
 }
 
+     /*-------------login----------------*/
+	 .loginin{
+        position: fixed;
+        height: 70px;
+        width: 70px;
+        padding: 0;
+        border: none;
+        border-radius: 50%;
+        left: 92%;
+        top:68%;
+        color: white;
+        background-color: chocolate;
+        transition:All 0.4s ease-in-out;
+        display: none;
+        
+      }
+      .loginin:hover{
+        color: chocolate;
+        background-color: white;
+        transition:All 0.4s ease-in-out;
+      }
+      @media screen and (max-width:1000px){
+        .loginin{
+          left:90%;
+          height: 60px;
+          width: 60px;
+          display: block;
+        }
+      }
+      @media screen and (max-width:700px){
+        .loginin{
+          left:80%;
+          height: 60px;
+          width: 60px;
+        }
+      }
