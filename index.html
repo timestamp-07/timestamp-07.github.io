@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>homepage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/mainCss.css">
+    <script src="js/finalJs.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <style>
+      html,body{
+          background-color: rgb(247, 237, 225);
+      }
+      /*-------------导航栏----------------*/
+      .navbar{
+          background-color: white;
+      }
+      .nav-item{
+          margin-left: 1.5em;
+          margin-right: 1.5em;
+      }
+      
+      .navbar-brand{
+          margin-left: 2em;
+      }
+      .collapse{
+          margin-right: 2em;
+          justify-content: end;
+      }
+      .login{
+          width: 8em;
+          color:white;
+          background-color: chocolate;
+          border-radius: 10em;
+          padding-left:0.2em ;
+          padding-right: em;
+          margin-left: 2em;
+          margin-right:2em ;
+          border: none;
+          transition:All 0.4s ease-in-out;
+      }
+      .login:hover{
+          background-color: rgb(219, 137, 79);
+          transition:All 0.4s ease-in-out;
+      }
+      .navbar-toggler:focus{
+          color:chocolate ;
+      }
+      
+      @media screen and (max-width:1000px){
+          .login{
+              display: none;
+          }
+          .collapse{
+              justify-content: center;
+              margin: 0 auto;
+              
+          }
+          .nav-item{
+              margin: 0 auto;
+              text-align: center;
+              margin-bottom: 1em;
+          }
+      }
+      .btn:hover{
+        background-color:rgb(247, 237, 225);
+        color: chocolate;
+      }
+  </style>
+  </head>
+
+<body>
+<!-- navbar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light" id="bar">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        TIMESTAMP
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse nav" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">首页</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="private.html">个人信件</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="public.html">公开信件</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="shop.html">商店</a>
+          </li>
+        </ul> 
+        
+      </div>
+    </div>
+    <form class="d-flex">
+      <a href="login.html"><button class="login" type="button" >登录/注册</button></a>
+  </form>
+</nav>
+
+<!-- carousel -->
+<div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/main1.jpg" class="d-block w-100" alt="...">
+      <div class="container">
+        <div class="carousel-caption d-none d-md-block text-start">
+          <h1><strong>个人信件</strong></h1>
+          <p>你会期待未来的自己吗？</p>
+          <p>你希望自己到了很久以后还能保持些什么观点或者品格？</p>
+          <p><a class="btn btn-lg btn-light zoom" href="#">写一封信</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/main2.jpg" class="d-block w-100" alt="...">
+      <div class="container">
+        <div class="carousel-caption d-none d-md-block">
+          <h1><strong>公共信件</strong></h1>
+          <p>一个基于情感倾诉、烦恼咨询的多应用匿名社区。</p>
+          <p>作为独立存在的微社交圈，供你分享生活乐趣，记录心情，吐露秘密，诉说心事，烦恼咨询。</p>
+          <p><a class="btn btn-lg btn-light zoom" href="#">去看看</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item ">
+      <img src="img/main3.jpg" class="d-block w-100" alt="...">
+      <div class="container">
+        <div class="carousel-caption text-end d-none d-md-block">
+          <h1><strong>周边商品</strong></h1>
+          <p>到了那一天，你将会收到这一封来自过去的信。</p>
+          <p><a class="btn btn-lg btn-light zoom" href="shop.html">立即购买</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- counter -->
+<section id="stats-counter" class="stats-counter section-bg reveal" style="background-color:rgb(247, 237, 225); padding-bottom: 30px;">
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
+          <div>
+            <span id="Clients">0</span>
+            <p>每小时活跃用户</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="bi bi-journal-richtext color-orange flex-shrink-0"></i>
+          <div>
+            <span id="Projects">0</span>
+            <p>个人信件</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="bi bi-headset color-green flex-shrink-0"></i>
+          <div>
+            <span id="Supports">0</span>
+            <p>公共信件</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="bi bi-people color-pink flex-shrink-0"></i>
+          <div>
+            <span id="Partners">0</span>
+            <p>注册用户</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- intro -->
+<section id="constructions" class="constructions">
+  <div class="container">
+
+    <div class="section-header reveal">
+      <h2>About Us</h2>
+      <h3>关于我们</h3>
+
+    </div>
+      <div class="row reveal">
+        <div class="col-md-6 gx-5 mb-4">
+          <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+            <img src="img/main5.jpg" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="col-md-6 gx-5 mb-4">
+          <h4><strong>宗旨</strong></h4>
+          <p class="text-muted">
+            在这里你将通过“书信”的方式学会表达情感、学会诉说衷肠、认识到真正的自己并学会与自己沟通。
+            让思绪在经过时间与空间的发酵之后，寄到你面前，回顾过去的生活点滴。
+          </p>
+          <p><strong>书·信</strong></p>
+          <p class="text-muted">
+            书信作为一种非常浪漫的表达情感的方式，展信时看到对方烙在纸上的笔迹，就能感受到别样的欢喜。
+            有句话叫“见字如晤”就是这个道理。光是想着书信跋山涉水地被送到你的手中，
+            就足够使人开心了，更不用说飞鸽传书、鱼传尺素、“快马加鞭未下鞍”和“愿把信件托付给那悠悠长江上翱翔的鱼鹰”的浪漫了。
+            <br><br>
+            如果可以的话，我也想在夜晚埋首台灯下写一些字，把心绪寄给你。
+          </p>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- Service -->
+<section id="services" class="services section-bg">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-header reveal">
+      <h2>Services</h2>
+      <h3>服务</h3>
+      <p>致力于让每一位信友都有良好的书信体验</p>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 reveal">
+      <div class="col">
+        <div class="card h-100">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">匿名系统</h5>
+            <p class="card-text">采取了匿名的形式，信友在网页中注册的账号将通过昵称的方式呈现，
+              从而解决了隐私泄露的风险和无法表达真实想法的顾虑。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">审核系统</h5>
+            <p class="card-text">审核机制会通过关键词过滤公开信件展示的内容，避免色情、暴力等内容的出现，维护正面风气。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">邮寄系统</h5>
+            <p class="card-text">每一位信友都能到周边购买实体信件，系统就会在设置好的时间和地点寄出信件。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Review -->
+<section id="review" class="review">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2>Reviews</h2>
+      <h3>评价</h3>
+  </div>
+  <div class="accordion d-flex justify-content-center align-items-center height reveal" id="accordionExample">
+      <div class="row">
+          <div class="col-md-6">
+            <div class="p-3">
+              <ul class="testimonial-list">
+                <li>
+                    <div class="card p-3 zoom" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">  
+                      <div class="d-flex flex-row align-items-center">  
+                        <img src="img/comments-1.jpg" width="50" class="rounded-circle">  
+                        <div class="d-flex flex-column ml-2" style="margin-left:10px ;">  
+                          <span class="font-weight-normal"><strong>房东的猫哥</strong></span>
+                          <div class="ratings">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </div>
+                          <span>“太治愈啦啦！”</span>                          
+                        </div>                       
+                      </div>                      
+                    </div>   
+                </li>
+  
+                <li>
+                  <div class="card p-3 zoom" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> 
+                      <div class="d-flex flex-row align-items-center">  
+                        <img src="img/comments-2.jpg" width="50" class="rounded-circle">  
+                        <div class="d-flex flex-column ml-2" style="margin-left:10px ;"> 
+                          <span class="font-weight-normal"><strong>一条金鱼</strong></span>
+                          <div class="ratings">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </div>
+                          <span>“收到信封了！好漂亮！”</span>                          
+                        </div>                        
+                      </div>                     
+                    </div> 
+                </li>
+  
+                <li>
+                  <div class="card p-3 zoom" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">  
+                      <div class="d-flex flex-row align-items-center">  
+                        <img src="img/comments-3.jpg" width="50" class="rounded-circle">  
+                        <div class="d-flex flex-column ml-2" style="margin-left:10px ;">  
+                          <span class="font-weight-normal"><strong>皮皮猪</strong></span>
+                          <div class="ratings">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </div>
+                          <span>“宝藏平台！！大推！！”</span>                          
+                        </div>                        
+                      </div>                      
+                    </div> 
+                </li>  
+              </ul>
+              </div>
+          </div>
+  
+          <div class="col-md-6">
+            <div class="p-3 testimonials-margin">
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                      <h4>太治愈啦啦！</h4>
+                      <div class="ratings">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+  
+                      <p>“记录日常的同时还能抒发自己的情绪，这里是个发泄的好地方，每次遇到挫折的时候都会到这边写写信，
+                        发现现在的我更了解自己了。”</p>
+                  </div>
+              </div>
+  
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                      <h4>收到信封啦！好漂亮哦！</h4>
+                      <div class="ratings">
+  
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        
+                      </div>
+  
+                      <p>“最近收到了一年前寄给自己的信，发现自己进步好多，谢谢当初的努力才有了今天的成绩。
+                        本来已经忘记曾经对自己写过的信，所以今天收到信的时候好惊喜哦！！很喜欢信封的设计和质感！”</p>
+                  </div>
+              </div>
+  
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                      <h4>宝藏平台！！大推！！</h4>
+                      <div class="ratings">  
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div> 
+                      <p>“之前无聊时候一直在TIMESTAMP这个平台玩，一开始是抱着试一试随便玩玩，后面发现平台中的网友也太好了吧，太暖心了呜呜~~
+                        这绝对是能倾述日常的宝藏平台，炒鸡推荐！！”</p>
+                  </div>
+              </div>
+              </div>  
+          </div>  
+      </div>
+  </div>  
+  </div>
+</div>
+</section>
+
+<!--Shop-->
+<section id="services" class="shop section-bg">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2>Lastest Merchandise</h2>
+      <h3>最新周边</h3>
+    </div>
+    <!-- <div class="py-5"> -->
+      <div class="container px-4 px-lg-5 reveal">
+          <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+              <div class="col mb-5 zoom">
+                  <div class="card h-100">
+                      <!-- Product image-->
+                      <img class="card-img-top" src="img/merch1.jpg" alt="...">
+                      <!-- Product details-->
+                      <div class="card-body p-4">
+                          <div class="text-center">
+                              <!-- Product name-->
+                              <h5>想星星想饿了</h5>
+                              <!-- Product price-->
+                              ¥10
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col mb-5 zoom">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="img/merch2.jpg" alt="...">
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5>方里白茶</h5>
+                            <!-- Product price-->
+                            ¥10
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5 zoom">
+              <div class="card h-100">
+                  <!-- Product image-->
+                  <img class="card-img-top" src="img/merch3.png" alt="...">
+                  <!-- Product details-->
+                  <div class="card-body p-4">
+                      <div class="text-center">
+                          <!-- Product name-->
+                          <h5>风与你皆过</h5>
+                          <!-- Product price-->
+                          ¥10
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col mb-5 zoom">
+            <div class="card h-100">
+                <!-- Product image-->
+                <img class="card-img-top" src="img/merch4.png" alt="...">
+                <!-- Product details-->
+                <div class="card-body p-4">
+                    <div class="text-center">
+                        <!-- Product name-->
+                        <h5>月亮的悄悄话</h5>
+                        <!-- Product price-->
+                        ¥10
+                    </div>
+                </div>
+            </div>
+        </div>  
+      </div>
+    </div>
+    <div class="container-fluid position-relative zoom">
+      <a href="shop.html" type="button" id="shopbtn" class="btn position-absolute top-50 start-50 translate-middle" 
+      style="background-color: rgb(247, 237, 225);color:chocolate;">了解更多</a>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer id="footer" class="footer">
+
+  <div class="footer-content position-relative">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6 col-md-6">
+          <div class="footer-info">
+            <h3>TIMESTAMP</h3>
+            <p>
+              一个专属于您的时间角落<br><br>
+              <strong>电话号码:</strong> +1234567890<br>
+              <strong>邮箱:</strong> timestamp123@email.com<br>
+            </p>
+            <div class="social-links d-flex mt-3">
+              <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+            </div><br>
+            &copy; Copyright <strong><span>TIMESTAMP</span></strong>. All Rights Reserved
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-2 footer-links">
+          <h4>首页</h4>
+          <ul>
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">平台服务</a></li>
+            <li><a href="#">用户评价</a></li>
+            <li><a href="#">最新周边</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-2 footer-links">
+          <h4>公共信件</h4>
+          <ul>
+            <li><a href="#">学业</a></li>
+            <li><a href="#">事业</a></li>
+            <li><a href="#">家庭</a></li>
+            <li><a href="#">爱情</a></li>
+            <li><a href="#">娱乐</a></li>
+            <li><a href="#">其他</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-2 footer-links">
+          <h4>商店</h4>
+          <ul>
+            <li><a href="#">明信片</a></li>
+            <li><a href="#">信封</a></li>
+            <li><a href="#">购物车</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+<!-- back to top btn -->
+<button class="ttop" href="#" type="button" id="gotop">TOP</button>
+
+</body>
+</html>

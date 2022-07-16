@@ -1,0 +1,453 @@
+﻿<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<!-- Library - Google Font Familys -->
+	<link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700%7cMontserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+	
+
+	<!-- Custom - Common CSS -->	
+	
+	<link rel="stylesheet" type="text/css" href="css/post.css">
+
+	<title>TimeStamp</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/home.css">
+	<script src="js/homep.js"></script>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<style>
+		html{
+                overflow-x:hidden ;
+            }
+            html,body{
+                background-color: rgb(247, 237, 225);
+                
+            }
+		/*-------------导航栏----------------*/
+		.navbar{
+                background-color: white;
+            }
+            .nav-item{
+                margin-left: 1.5em;
+                margin-right: 1.5em;
+            }
+            
+            .navbar-brand{
+                margin-left: 2em;
+            }
+            .collapse{
+                margin-right: 2em;
+                justify-content: end;
+            }
+            .login{
+                width: 8em;
+                color:white;
+                background-color: chocolate;
+                border-radius: 10em;
+                padding-left:0.2em ;
+                padding-right: em;
+                margin-left: 2em;
+                margin-right:2em ;
+                
+                border: none;
+                transition:All 0.4s ease-in-out;
+            }
+            .login:hover{
+                background-color: rgb(219, 137, 79);
+                transition:All 0.4s ease-in-out;
+            }
+            .login:focus{
+                border: none;
+            }
+            .navbar-toggler:focus{
+                color:chocolate ;
+            }
+            
+            @media screen and (max-width:1000px){
+                .login{
+                    display: none;
+                }
+                .collapse{
+                    justify-content: center;
+                    margin: 0 auto;
+                    
+                }
+                .nav-item{
+                    margin: 0 auto;
+                    text-align: center;
+                    margin-bottom: 1em;
+                }
+            }
+			 /*-------------寄信----------------*/
+			 .note-title{
+                margin:0 auto;
+                text-align: center;
+                margin-top: 8em;
+				margin-bottom: 3em;
+            }
+            
+            .title-fi{
+                margin-bottom:0 ;
+                font-size: 1em;
+                color: chocolate;
+            }
+           .un-line{
+                padding-bottom: 0.5em;
+                border-bottom: 0.15em solid chocolate;
+                margin-bottom:0.5em ;
+                font-size: 1.5em;
+           }
+		   /*--------------footer---------------*/
+			.footer {
+				color: #fff;
+				background: url("img/footer.jpg") top center no-repeat;
+				background-size: cover;
+				padding-top: 50px ;
+				position: relative;
+			}
+		</style>
+</head>
+
+<body data-offset="200" data-spy="scroll" data-target=".ownavigation">
+		<!-----------------导航---------------------->
+		<nav class="navbar fixed-top navbar-expand-lg navbar-light" id="bar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                  TIMESTAMP
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nav" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="private.html">个人信件</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="public.html">公开信件</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="shop.html">商店</a>
+                    </li>
+                  </ul> 
+                  
+                </div>
+              </div>
+             <form class="d-flex">
+                        <a href="login.html"><button class="login" type="button" >登录/注册</button></a>
+            </form>
+        </nav>
+		<!-- ----------------题头------------------ -->
+		<div class="note-title">
+            <h1  class="title-fi">公开信件</h1>
+            <span class="un-line">选择一个分区</span>
+        </div>
+			<!-- Page Content -->
+			<div class="container-fluid no-left-padding no-right-padding page-content">
+				<!-- Container -->
+				<div class="container">
+					<div class="row">
+						<div class="content-area col-sm-12">
+							<!-- Row -->
+							<div class="row blog-masonry-list">
+								<div class="col-lg-4 col-sm-6 blog-masonry-box">
+									<div class="type-post">
+										
+										<div class="entry-content">
+											<div class="entry-header">	
+												<span class="post-category"><a href="#" title="Travel">2022年7月16日</a></span>
+												<h3 class="entry-title"><a href="#" title="Charming Evening Field">DDL好痛苦</a></h3>
+											</div>								
+											<p>为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？</p>
+											<a href="blogEn.html" title="Read More">点击阅读</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-sm-6 blog-masonry-box">
+									<div class="type-post">
+										
+										<div class="entry-content">
+											<div class="entry-header">	
+												<span class="post-category"><a href="#" title="Travel">2022年7月16日</a></span>
+												<h3 class="entry-title"><a href="#" title="Charming Evening Field">DDL好痛苦</a></h3>
+											</div>								
+											<p>为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？</p>
+											<a href="blogEn.html" title="Read More">点击阅读</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-sm-6 blog-masonry-box">
+									<div class="type-post">
+										
+										<div class="entry-content">
+											<div class="entry-header">	
+												<span class="post-category"><a href="#" title="Travel">2022年7月16日</a></span>
+												<h3 class="entry-title"><a href="#" title="Charming Evening Field">DDL好痛苦</a></h3>
+											</div>								
+											<p>为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？</p>
+											<a href="blogEn.html" title="Read More">点击阅读</a>
+										</div>
+									</div>
+								</div>
+							
+								<div class="col-lg-4 col-sm-6 blog-masonry-box">
+									<div class="type-post">
+										
+										<div class="entry-content">
+											<div class="entry-header">	
+												<span class="post-category"><a href="#" title="Travel">2022年7月16日</a></span>
+												<h3 class="entry-title"><a href="#" title="Charming Evening Field">DDL好痛苦</a></h3>
+											</div>								
+											<p>为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？</p>
+											<a href="blogEn.html" title="Read More">点击阅读</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-sm-6 blog-masonry-box">
+									<div class="type-post">
+										
+										<div class="entry-content">
+											<div class="entry-header">	
+												<span class="post-category"><a href="#" title="Travel">2022年7月16日</a></span>
+												<h3 class="entry-title"><a href="#" title="Charming Evening Field">DDL好痛苦</a></h3>
+											</div>								
+											<p>为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？</p>
+											<a href="blogEn.html" title="Read More">点击阅读</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-sm-6 blog-masonry-box">
+									<div class="type-post">
+										
+										<div class="entry-content">
+											<div class="entry-header">	
+												<span class="post-category"><a href="#" title="Travel">2022年7月16日</a></span>
+												<h3 class="entry-title"><a href="#" title="Charming Evening Field">DDL好痛苦</a></h3>
+											</div>								
+											<p>为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？</p>
+											<a href="blogEn.html" title="Read More">点击阅读</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-sm-6 blog-masonry-box">
+									<div class="type-post">
+										
+										<div class="entry-content">
+											<div class="entry-header">	
+												<span class="post-category"><a href="#" title="Travel">2022年7月16日</a></span>
+												<h3 class="entry-title"><a href="#" title="Charming Evening Field">DDL好痛苦</a></h3>
+											</div>								
+											<p>为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？</p>
+											<a href="blogEn.html" title="Read More">点击阅读</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-sm-6 blog-masonry-box">
+									<div class="type-post">
+										
+										<div class="entry-content">
+											<div class="entry-header">	
+												<span class="post-category"><a href="#" title="Travel">2022年7月16日</a></span>
+												<h3 class="entry-title"><a href="#" title="Charming Evening Field">DDL好痛苦</a></h3>
+											</div>								
+											<p>为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？</p>
+											<a href="blogEn.html" title="Read More">点击阅读</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-sm-6 blog-masonry-box">
+									<div class="type-post">
+										
+										<div class="entry-content">
+											<div class="entry-header">	
+												<span class="post-category"><a href="#" title="Travel">2022年7月16日</a></span>
+												<h3 class="entry-title"><a href="#" title="Charming Evening Field">DDL好痛苦</a></h3>
+											</div>								
+											<p>为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？</p>
+											<a href="blogEn.html" title="Read More">点击阅读</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-sm-6 blog-masonry-box">
+									<div class="type-post">
+										
+										<div class="entry-content">
+											<div class="entry-header">	
+												<span class="post-category"><a href="#" title="Travel">2022年7月16日</a></span>
+												<h3 class="entry-title"><a href="#" title="Charming Evening Field">DDL好痛苦</a></h3>
+											</div>								
+											<p>为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？</p>
+											<a href="blogEn.html" title="Read More">点击阅读</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-sm-6 blog-masonry-box">
+									<div class="type-post">
+										
+										<div class="entry-content">
+											<div class="entry-header">	
+												<span class="post-category"><a href="#" title="Travel">2022年7月16日</a></span>
+												<h3 class="entry-title"><a href="#" title="Charming Evening Field">DDL好痛苦</a></h3>
+											</div>								
+											<p>为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？</p>
+											<a href="blogEn.html" title="Read More">点击阅读</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-sm-6 blog-masonry-box">
+									<div class="type-post">
+										
+										<div class="entry-content">
+											<div class="entry-header">	
+												<span class="post-category"><a href="#" title="Travel">2022年7月16日</a></span>
+												<h3 class="entry-title"><a href="#" title="Charming Evening Field">DDL好痛苦</a></h3>
+											</div>								
+											<p>为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？</p>
+											<a href="blogEn.html" title="Read More">点击阅读</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- Row /- -->
+							
+						</div>
+					</div>
+				</div><!-- Container /- -->
+			</div><!-- Page Content /- -->
+			
+		</main>
+
+		<div class="demo" style="min-height: 10em;">
+            <div class="container">
+                <div class="row pad-15">
+                    <div class="col-md-12">
+                        <nav class="pagination-outer" aria-label="Page navigation">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a href="#" class="page-link" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="public.html">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a href="#" class="page-link" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+	</div>
+	
+	<!-- footer -->
+		<footer id="footer" class="footer">
+
+			<div class="footer-content position-relative">
+			<div class="container">
+				<div class="row">
+				<div class="col-lg-6 col-md-6">
+					<div class="footer-info">
+					<h3>TIMESTAMP</h3>
+					<p>
+						一个专属于您的时间角落<br><br>
+						<strong>电话号码:</strong> +1234567890<br>
+						<strong>邮箱:</strong> timestamp123@email.com<br>
+					</p>
+					<div class="social-links d-flex mt-3">
+						<a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+						<a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+						<a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+						<a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+					</div><br>
+					&copy; Copyright <strong><span>TIMESTAMP</span></strong>. All Rights Reserved
+					</div>
+				</div>
+		
+				<div class="col-lg-2 col-md-2 footer-links">
+					<h4>首页</h4>
+					<ul>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">平台服务</a></li>
+					<li><a href="#">用户评价</a></li>
+					<li><a href="#">最新周边</a></li>
+					</ul>
+				</div>
+		
+				<div class="col-lg-2 col-md-2 footer-links">
+					<h4>公共信件</h4>
+					<ul>
+					<li><a href="#">学业</a></li>
+					<li><a href="#">事业</a></li>
+					<li><a href="#">家庭</a></li>
+					<li><a href="#">爱情</a></li>
+					<li><a href="#">娱乐</a></li>
+					<li><a href="#">其他</a></li>
+					</ul>
+				</div>
+		
+				<div class="col-lg-2 col-md-2 footer-links">
+					<h4>商店</h4>
+					<ul>
+					<li><a href="#">明信片</a></li>
+					<li><a href="#">信封</a></li>
+					<li><a href="#">购物车</a></li>
+					</ul>
+				</div>
+		
+				</div>
+			</div>
+			</div>
+		
+		</footer>
+        <button class="ttop" href="#" type="button" id="gotop">TOP</button>
+		<script>
+            window.addEventListener("scroll",handle)
+            function handle(){
+                var oTop = document.body.scrollTop||document.documentElement.scrollTop
+                if(oTop>=200){
+                    gotop.style.display = "block";
+                }else{
+                    gotop.style.display = "none";
+                }
+
+                gotop.onclick = function(){
+                    window.scrollTo({
+                        top:0,
+                        behavior:"smooth"
+                    })
+                }
+            }
+        </script>
+	
+	<!-- JQuery v1.12.4 -->
+	<script src="js/jquery-1.12.4.min.js"></script>
+
+	<!-- Library - Js -->
+	<script src="js/popper.min.js"></script>
+	<script src="js/lib.js"></script>
+	
+	<!-- Library - Theme JS -->
+	<script src="js/functions.js"></script>
+	
+</body>
+</html>

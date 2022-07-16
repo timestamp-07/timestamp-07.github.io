@@ -1,0 +1,290 @@
+<html>
+    <head>
+        <title>TimeStamp</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="css/home.css">
+        <script src="js/homep.js"></script>
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <style>
+            html{
+                overflow-x:hidden ;
+            }
+            html,body{
+                background-color: rgb(247, 237, 225);
+                
+            }
+            
+            /*-------------导航栏----------------*/
+            .navbar{
+                background-color: white;
+            }
+            .nav-item{
+                margin-left: 1.5em;
+                margin-right: 1.5em;
+                
+            }
+            
+            .navbar-brand{
+                margin-left: 2em;
+            }
+            .collapse{
+                margin-right: 2em;
+                justify-content: end;
+            }
+            .login{
+                width: 8em;
+                color:white;
+                background-color: chocolate;
+                border-radius: 10em;
+                padding-left:0.2em ;
+                padding-right: em;
+                margin-left: 2em;
+                margin-right:2em ;
+                margin-top: 1em;
+                border: none;
+                transition:All 0.4s ease-in-out;
+            }
+            .login:hover{
+                background-color: rgb(219, 137, 79);
+                transition:All 0.4s ease-in-out;
+            }
+            .login:focus{
+                border: none;
+            }
+            .navbar-toggler:focus{
+                color:chocolate ;
+            }
+            
+            @media screen and (max-width:1000px){
+                .login{
+                    display: none;
+                }
+                .collapse{
+                    justify-content: center;
+                    margin: 0 auto;
+                    
+                }
+                .nav-item{
+                    margin: 0 auto;
+                    text-align: center;
+                    margin-bottom: 1em;
+                }
+            }
+            
+
+            /*---------------------------*/
+            .form-control{
+                background-color: rgba(238, 238, 238, 0.895);
+                border: none;
+                color: rgba(0, 0, 0, 0.718);
+            }
+            .form-control{
+                background-color: rgba(238, 238, 238, 0.895);
+                border: none;
+                color: black;
+            }
+            .form-control:focus{
+                background-color: rgba(238, 238, 238, 0.895);
+                border: none;
+                box-shadow: 0 0px 2px 3px rgb(224, 155, 106);
+                color: rgba(0, 0, 0, 0.718);
+            }
+
+            .con-intro{
+                position: relative;
+                bottom: 3em;
+                padding-left: 8%;
+                padding-right: 8%;
+                color: chocolate;
+                text-align: center;
+            }
+            .form-check-input:focus{
+                background-color:chocolate;
+                border-color: chocolate;
+                box-shadow: none;
+                box-shadow: 0 0px 0px 3px rgb(251, 190, 130);
+                transition:All 0.4s ease-in-out;
+
+            }
+            .form-check-input:checked{
+                background-color:chocolate;
+                border-color: chocolate;
+                box-shadow: none;
+                transition:All 0.4s ease-in-out;
+
+            }
+            /*-----------------send-----------------------*/
+            .send-center{
+                text-align: center;
+                padding-bottom: 2em;
+            }
+            .con-send,.con-send:focus{
+                
+                font-size: 20px;
+                text-align: center;
+                color: white;
+                width: auto;
+                height: auto;
+                border: none;
+                
+                background-color: chocolate;
+                width: 8em;
+                height: 2em;
+                border-radius: 100px;/*圆角*/
+                transition:All 0.4s ease-in-out;
+                margin-top: 1em;
+            }
+
+            .con-send:checked{
+                background-color:chocolate;
+                border-color: chocolate;
+                box-shadow: none;
+                transition:All 0.4s ease-in-out;
+
+            }
+            .con-send:hover{
+                
+                font-size: 20px;
+                text-align: center;
+                color: white;
+                width: auto;
+                height: auto;
+                border: none;
+                background-color: rgb(237, 158, 101);
+            
+                width: 8em;
+                height: 2em;
+                border-radius: 100px;/*圆角*/
+                transition:All 0.4s ease-in-out;
+            }
+            /*-----------------跳转send----------------------*/
+            .btn-understood{
+                
+                width: 8em;
+                height: 2em;
+                background-color: chocolate;
+                border-radius: 100px;/*圆角*/
+                transition:All 0.4s ease-in-out;
+                border: none;
+            }
+            .btn-understood:hover{
+            
+                width: 8em;
+                height: 2em;
+                background-color: rgb(237, 158, 101);
+                border-radius: 100px;/*圆角*/
+                transition:All 0.4s ease-in-out;
+                border: none;
+            }
+            /*----------------------*/
+            .bot{
+                margin-top:5em;
+                
+                
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light" id="bar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                  TIMESTAMP
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nav" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="private.html">个人信件</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="public.html">公开信件</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="shop.html">商店</a>
+                    </li>
+                  </ul> 
+                  
+                </div>
+              </div>
+             <form class="d-flex">
+                        <a href="login.html"><button class="login" type="button" >登录/注册</button></a>
+            </form>
+        </nav>
+        <!--contact-->
+        <div class="all-contact">
+            
+            <div class="enter-text">
+                <div class="inquiry-details mb-3" required>
+                    <h4 class="id-title">信件类型</h4>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                        公开信件
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                        个人信件
+                        </label>
+                    </div>
+                    
+                </div>
+                <div class="enter-name mb-3" >
+                    <label for="exampleFormControlInput1" class="form-label">姓名/昵称</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="您的姓名" required>
+                </div>
+                
+                <div class="enter-email mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">邮箱</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="TimeStamp@ts.com" required>
+                </div>
+                <div class="enter-subject mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">发送时间</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="" >
+                </div>
+                <div class="enter-detail mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">内容</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                </div>
+                <div>
+                    <!-- Button trigger modal -->
+                    <div class="send-center">
+                        <button type="submit" class="con-send btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            SEND
+                        </button>
+                    </div>
+                </div>
+                <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                发送成功
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn-understood btn-primary" data-bs-dismiss="modal">Understood</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                     </div>
+        </div>
+
+        <div class="bot">
+            <span class="colo">© TimeStamp,TEAM 7</span>
+        </div>
+    </body>
+</html>

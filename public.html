@@ -1,0 +1,338 @@
+<html>
+    <head>
+        <title>TimeStamp</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="css/home.css">
+        <script src="js/homep.js"></script>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+		
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <style>
+            html{
+                overflow-x:hidden ;
+            }
+            html,body{
+                background-color: rgb(247, 237, 225);
+                
+            }
+            
+            /*-------------导航栏----------------*/
+            .navbar{
+                background-color: white;
+            }
+            .nav-item{
+                margin-left: 1.5em;
+                margin-right: 1.5em;
+            }
+            
+            .navbar-brand{
+                margin-left: 2em;
+            }
+            .collapse{
+                margin-right: 2em;
+                justify-content: end;
+            }
+            .login{
+                width: 8em;
+                color:white;
+                background-color: chocolate;
+                border-radius: 10em;
+                padding-left:0.2em ;
+                padding-right: em;
+                margin-left: 2em;
+                margin-right:2em ;
+                margin-top: 1em;
+                border: none;
+                transition:All 0.4s ease-in-out;
+            }
+            .login:hover{
+                background-color: rgb(219, 137, 79);
+                transition:All 0.4s ease-in-out;
+            }
+            .login:focus{
+                border: none;
+            }
+            .navbar-toggler:focus{
+                color:chocolate ;
+            }
+            
+            @media screen and (max-width:1000px){
+                .login{
+                    display: none;
+                }
+                .collapse{
+                    justify-content: center;
+                    margin: 0 auto;
+                    
+                }
+                .nav-item{
+                    margin: 0 auto;
+                    text-align: center;
+                    margin-bottom: 1em;
+                }
+            }
+            /*-------------寄信----------------*/
+            .note-title{
+                margin:0 auto;
+                text-align: center;
+                margin-top: 5em;
+            }
+            
+            .title-fi{
+                margin-bottom:0 ;
+                font-size: 1em;
+                color: chocolate;
+            }
+           .un-line{
+                padding-bottom: 0.5em;
+                border-bottom: 0.15em solid chocolate;
+                margin-bottom:0.5em ;
+                font-size: 1.5em;
+           }
+            /*-------------信件----------------*/
+            .mess{
+                margin: 0 auto;
+                text-align: center;
+                max-width: 80em;
+                display: flex;
+                margin-bottom: 2em;
+                justify-content: center; 
+            }
+            .mee{
+                min-height: 20em;
+                text-align: center;
+                
+            }
+            .open-img:hover{
+                content: url(img/open.png);
+            }
+            .open-img{
+                width: 85%;
+                height: auto;
+            }
+            .op{
+                margin-left: 2em;
+                margin-right: 2em;
+            }
+            .date{
+                position: relative;
+                
+                font-size: 1.2em;
+                
+                margin-left: 2em;
+                margin-right: 2em;
+            }
+            .por{
+                margin-bottom:0 ;
+                font-size: 1em;
+                color: chocolate;
+            }
+            /*--------------footer---------------*/
+			.footer {
+				color: #fff;
+				background: url("img/footer.jpg") top center no-repeat;
+				background-size: cover;
+				padding-top: 50px ;
+				position: relative;
+                margin-top: 6em;
+			}
+            
+            
+        </style>
+    </head>
+    <body>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light" id="bar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                  TIMESTAMP
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nav" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="private.html">个人信件</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="public.html">公开信件</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="shop.html">商店</a>
+                    </li>
+                  </ul> 
+                  
+                </div>
+              </div>
+             <form class="d-flex">
+                        <a href="login.html"><button class="login" type="button" >登录/注册</button></a>
+            </form>
+        </nav>
+
+        <!------------------------题头-------------------->
+        <div class="header-content">
+            <!-- .container -->
+            <div class="hee">
+                <!-- .row -->
+                <div class="kiki row header-row">
+                    
+                    <div class="col-sm-7 col-md-8 col-lg-7">
+                        <div class="header-txt">
+                            <h1>欢迎光临</h1>
+                            <h1>TimeStamp</h1>
+                            <p>在这里与世界各地的人们交心，在这里与世界各地的人们相识。</p>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="yt col-sm-5 col-md-4 col-lg-offset-1 header-img">
+                        <div class="carousel-slider header-slider animation" data-animation="animation-fade-in-down">
+                            <div class="youtong"><img  src="img/box.png"></div>
+                            
+                        </div>
+                    </div>
+                    <div class="header-btn">
+                            <a href="#" class="btn-custom-left" type="button">随机阅读</a>
+                            <a href="send.html" class="btn-custom-right" type="button"> 写一封信</a>
+                    </div>
+                </div>
+                <!-- .row end -->
+            </div>
+        </div>
+
+        <!------------------------信件浏览-------------------->
+        <div class="note-title">
+            <h1  class="title-fi">公开信件</h1>
+            <span class="un-line">选择一个分区</span>
+        </div>
+        
+        <div class="mess" >
+            
+            <div class="mee">
+                <a href="post.html"><span class="op"><img class="open-img" src="img/close.png" ></span></a>
+                <h5 class="date">关于学业</h5>
+                <h5 class="por">介绍介绍介绍介绍介绍</h5>
+            </div>
+            
+            <div class="mee">
+                <a href="post.html"><span class="op"><img class="open-img" src="img/close.png" ></span></a>
+                <h5 class="date">关于事业</h5>
+                <h5 class="por">介绍介绍介绍介绍介绍</h5>
+            </div>
+            <div class="mee">
+                <a href="post.html"><span class="op"><img class="open-img" src="img/close.png" ></span></a>
+                <h5 class="date">关于家庭</h5>
+                <h5 class="por">介绍介绍介绍介绍介绍</h5>
+            </div>
+        </div>
+        <div class="mess">
+            <div class="mee">
+                <a href="post.html"><span class="op"><img class="open-img" src="img/close.png" ></span></a>
+                <h5 class="date">关于爱情</h5>
+                <h5 class="por">介绍介绍介绍介绍介绍</h5>
+            </div>
+            <div class="mee">
+                <a href="post.html"><span class="op"><img class="open-img" src="img/close.png" ></span></a>
+                <h5 class="date">关于生活</h5>
+                <h5 class="por">介绍介绍介绍介绍介绍</h5>
+            </div>
+            <div class="mee">
+                <a href="post.html"><span class="op"><img class="open-img" src="img/close.png" ></span></a>
+                <h5 class="date">其他</h5>
+                <h5 class="por">介绍介绍介绍介绍介绍</h5>
+            </div>
+        </div>
+       
+        
+
+        <!-- footer -->
+		<footer id="footer" class="footer">
+
+			<div class="footer-content position-relative">
+			<div class="container">
+				<div class="row">
+				<div class="col-lg-6 col-md-6">
+					<div class="footer-info">
+					<h3>TIMESTAMP</h3>
+					<p>
+						一个专属于您的时间角落<br><br>
+						<strong>电话号码:</strong> +1234567890<br>
+						<strong>邮箱:</strong> timestamp123@email.com<br>
+					</p>
+					<div class="social-links d-flex mt-3">
+						<a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+						<a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+						<a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+						<a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+					</div><br>
+					&copy; Copyright <strong><span>TIMESTAMP</span></strong>. All Rights Reserved
+					</div>
+				</div>
+		
+				<div class="col-lg-2 col-md-2 footer-links">
+					<h4>首页</h4>
+					<ul>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">平台服务</a></li>
+					<li><a href="#">用户评价</a></li>
+					<li><a href="#">最新周边</a></li>
+					</ul>
+				</div>
+		
+				<div class="col-lg-2 col-md-2 footer-links">
+					<h4>公共信件</h4>
+					<ul>
+					<li><a href="#">学业</a></li>
+					<li><a href="#">事业</a></li>
+					<li><a href="#">家庭</a></li>
+					<li><a href="#">爱情</a></li>
+					<li><a href="#">娱乐</a></li>
+					<li><a href="#">其他</a></li>
+					</ul>
+				</div>
+		
+				<div class="col-lg-2 col-md-2 footer-links">
+					<h4>商店</h4>
+					<ul>
+					<li><a href="#">明信片</a></li>
+					<li><a href="#">信封</a></li>
+					<li><a href="#">购物车</a></li>
+					</ul>
+				</div>
+		
+				</div>
+			</div>
+			</div>
+		
+		</footer>
+        <button class="ttop" href="#" type="button" id="gotop">TOP</button>
+
+        <script>
+            window.addEventListener("scroll",handle)
+            function handle(){
+                var oTop = document.body.scrollTop||document.documentElement.scrollTop
+                if(oTop>=200){
+                    gotop.style.display = "block";
+                }else{
+                    gotop.style.display = "none";
+                }
+
+                gotop.onclick = function(){
+                    window.scrollTo({
+                        top:0,
+                        behavior:"smooth"
+                    })
+                }
+            }
+        </script>
+     </body>
+
+    
+</html>
