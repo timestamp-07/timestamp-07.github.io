@@ -20,6 +20,7 @@
       /*-------------导航栏----------------*/
       .navbar{
           background-color: white;
+          height: 5rem;
       }
       .nav-item{
           margin-left: 1.5em;
@@ -72,6 +73,20 @@
         background-color:rgb(247, 237, 225);
         color: chocolate;
       }
+      .nav-link:hover{
+         color: chocolate;  
+         font-weight: bolder;
+         border-bottom: .25rem solid transparent;
+         border-bottom-color: chocolate;
+         transition: all 0.3s;
+      }
+ 
+      #active{
+        color: chocolate;
+        font-weight: bolder;
+        border-bottom: .25rem solid transparent;
+         border-bottom-color: chocolate;
+    }
   </style>
   </head>
 
@@ -94,7 +109,7 @@
               <a class="nav-link " aria-current="page" href="private.html">个人信件</a>
             </li>
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="public.html">公开信件</a>
+            <a class="nav-link " aria-current="page" href="public.html" id="active">公开信件</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="shop.html">商店</a>
@@ -117,28 +132,34 @@
       <div class="col-lg-8">
 
         <article class="blog-details">
-          <h2 class="title">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</h2>
+          <h2 class="title">厚德载爱</h2>
 
           <div class="meta-top">
             <ul>
-              <li class="d-flex align-items-center"><i class="bi bi-person"></i>John Doe</li>
-              <li class="d-flex align-items-center"><i class="bi bi-clock"></i><time datetime="2020-01-01">Jan 1, 2022</time></li>
+              <li class="d-flex align-items-center"><i class="bi bi-person"></i>月牙湾</li>
+              <li class="d-flex align-items-center"><i class="bi bi-clock"></i><time>2022年7月16日</time></li>
             </ul>
           </div><!-- End meta top -->
 
           <div class="content">
             <p>
-              Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
-              Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
+              某东是我的心瘾。挂念某东的那个魂魄，就如吸食鸦片的人得不到鸦片，在角落里瑟瑟发抖，它抠着自己的手脚，
+              全身却似乎被蛊虫爬过啃食，任由并不干净的血液在躯体内循环。我呀我，是何种勇气，敢去扮演绝世大情圣，换取理智的怜悯？
+              而理智并没有怜悯。它如一个武林高手，用腹语，用一种天外之音告诉那个可怜的魂魄------爱自己才能爱别人。           
             </p>
 
             <p>
-              Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non reiciendis. Sequi in accusamus harum vel aspernatur. Excepturi numquam nihil cumque odio. Et voluptate cupiditate.
+              “只有靠更温暖包容如母亲般承载一切无论什么时候都不会放弃的爱人来疗愈”。早上起床时看到这个评论，反复读，有点恍然大悟。
+              那是坤的精神，“地势坤，君子以厚德载物”。坤是柔顺而能够承受一切的母亲，如大地广博而浑厚。
+              最初相识，某东说他希望找个思想独立的人；而分手前夜，他告诉我他想要一个听他话的伴侣。他的理想伴侣，确实是母亲的化身，
+              温柔地承载他的戏谑，他的灰暗，他的狂妄，承受他的所有情绪，带着始终温暖的微笑。
+              而我，没有厚德载爱，故而无法承受这种巨大的攻击力和破坏力。
             </p>
             <p>
-              Sed quo laboriosam qui architecto. Occaecati repellendus omnis dicta inventore tempore provident voluptas mollitia aliquid. Id repellendus quia. Asperiores nihil magni dicta est suscipit perspiciatis. Voluptate ex rerum assumenda dolores nihil quaerat.
-              Dolor porro tempora et quibusdam voluptas. Beatae aut at ad qui tempore corrupti velit quisquam rerum. Omnis dolorum exercitationem harum qui qui blanditiis neque.
-              Iusto autem itaque. Repudiandae hic quae aspernatur ea neque qui. Architecto voluptatem magni. Vel magnam quod et tempora deleniti error rerum nihil tempora.
+              我的爱，看似爱得无法自拔，而这种爱，轰隆隆，动辄地裂山崩，天地合一，更像是表演给自己看的。像一个敬业而无病呻吟的演员，
+              连自己也没能够感动。接受观众翻个白眼，吐个口水，戏没有演到最后观众就散场了。
+              还是把戏演到了最后。快点洗洗睡。
+              自强不息，厚德载物，天地才会真正融合，真正的爱才会降临。那时应该已经放下了。
             </p>
 
           </div><!-- End post content -->
@@ -161,11 +182,12 @@
       <div class="d-flex">
         <div class="comment-img"><img src="img/comments-1.jpg" alt=""></div>
         <div>
-          <h5><a href="">Georgia Reader</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i>回复</a></h5>
-          <time datetime="2020-01-01">01 Jan,2022</time>
+          <h5><a href="">小白不白</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i>回复</a></h5>
+          <time datetime="2020-01-01">2022年7月16日</time>
           <p>
-            Et rerum totam nisi. Molestiae vel quam dolorum vel voluptatem et et. Est ad aut sapiente quis molestiae est qui cum soluta.
-            Vero aut rerum vel. Rerum quos laboriosam placeat ex qui. Sint qui facilis et.
+            条分缕析，深刻的复盘，真的很棒！每一段爱情都值得铭记，不是因为那个人，
+            那时的自己和当时爱的感觉。而是因为从中提炼、总结实现的个人成长。是下一段感情的铺垫，
+            为遇到真正的MR.RIGHT提升能量。也是自己人生中一个因果兑现的坑，爬出来，你就赢了。很开心看到你的理智和强大的辨析能力，这个坑，你出来了！恭喜！
           </p>
         </div>
       </div>
@@ -175,10 +197,11 @@
       <div class="d-flex">
         <div class="comment-img"><img src="img/comments-2.jpg" alt=""></div>
         <div>
-          <h5><a href="">Aron Alvarado</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i>回复</a></h5>
-          <time datetime="2020-01-01">01 Jan,2022</time>
+          <h5><a href="">小贝姐姐</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i>回复</a></h5>
+          <time datetime="2020-01-01">2022年7月16日</time>
           <p>
-            Ipsam tempora sequi voluptatem quis sapiente non. Autem itaque eveniet saepe. Officiis illo ut beatae.
+            其实，思想独立又温柔可人，行事干练又小鸟依人的女性谁不喜欢？只是现实中具备这些于一体的太少，稀有的几个拥有更高眼界。
+            因此，你也不必遗憾，属于你的ta会欣赏你的优点，理解你的苦楚，包容你的不足，还愿意与你一同进步哦。
           </p>
         </div>
       </div>
@@ -187,14 +210,10 @@
         <div class="d-flex">
           <div class="comment-img"><img src="img/comments-3.jpg" alt=""></div>
           <div>
-            <h5><a href="">Lynda Small</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i>回复</a></h5>
-            <time datetime="2020-01-01">01 Jan,2022</time>
+            <h5><a href="">月牙湾</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i>回复</a></h5>
+            <time datetime="2020-01-01">2022年7月17日</time>
             <p>
-              Enim ipsa eum fugiat fuga repellat. Commodi quo quo dicta. Est ullam aspernatur ut vitae quia mollitia id non. Qui ad quas nostrum rerum sed necessitatibus aut est. Eum officiis sed repellat maxime vero nisi natus. Amet nesciunt nesciunt qui illum omnis est et dolor recusandae.
-
-              Recusandae sit ad aut impedit et. Ipsa labore dolor impedit et natus in porro aut. Magnam qui cum. Illo similique occaecati nihil modi eligendi. Pariatur distinctio labore omnis incidunt et illum. Expedita et dignissimos distinctio laborum minima fugiat.
-
-              Libero corporis qui. Nam illo odio beatae enim ducimus. Harum reiciendis error dolorum non autem quisquam vero rerum neque.
+              呜呜呜谢谢你!
             </p>
           </div>
         </div>
@@ -204,11 +223,10 @@
       <div class="d-flex">
         <div class="comment-img"><img src="img/comments-4.jpg" alt=""></div>
         <div>
-          <h5><a href="">Nolan Davidson</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i>回复</a></h5>
-          <time datetime="2020-01-01">01 Jan,2022</time>
+          <h5><a href="">蛮小满</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i>回复</a></h5>
+          <time datetime="2020-01-01">2022年7月17日</time>
           <p>
-            Distinctio nesciunt rerum reprehenderit sed. Iste omnis eius repellendus quia nihil ut accusantium tempore. Nesciunt expedita id dolor exercitationem aspernatur aut quam ut. Voluptatem est accusamus iste at.
-            Non aut et et esse qui sit modi neque. Exercitationem et eos aspernatur. Ea est consequuntur officia beatae ea aut eos soluta. Non qui dolorum voluptatibus et optio veniam. Quam officia sit nostrum dolorem.
+            厚德载物 厚德载爱
           </p>
         </div>
       </div>
@@ -248,36 +266,36 @@
 
               <div class="post-item mt-3">
                 <div>
-                  <h4><a href="blog-details.html">Nihil blanditiis at in nihil autem</a></h4>
-                  <time datetime="2020-01-01">Jan 1, 2020</time>
+                  <h4><a href="blog-details.html">莫名其妙的相亲</a></h4>
+                  <time datetime="2020-01-01">2022年7月30日</time>
                 </div>
               </div><!-- End recent post item-->
 
               <div class="post-item">
                 <div>
-                  <h4><a href="blog-details.html">Quidem autem et impedit</a></h4>
-                  <time datetime="2020-01-01">Jan 1, 2020</time>
+                  <h4><a href="blog-details.html">有没有那么一个想忘又忘不掉的人？</a></h4>
+                  <time datetime="2020-01-01">2022年7月16日</time>
                 </div>
               </div><!-- End recent post item-->
 
               <div class="post-item">
                 <div>
-                  <h4><a href="blog-details.html">Id quia et et ut maxime similique occaecati ut</a></h4>
-                  <time datetime="2020-01-01">Jan 1, 2020</time>
+                  <h4><a href="blog-details.html">异地恋女友</a></h4>
+                  <time datetime="2020-01-01">2022年7月16日</time>
                 </div>
               </div><!-- End recent post item-->
 
               <div class="post-item">
                 <div>
-                  <h4><a href="blog-details.html">Laborum corporis quo dara net para</a></h4>
-                  <time datetime="2020-01-01">Jan 1, 2020</time>
+                  <h4><a href="blog-details.html">和认识多年的朋友暧昧</a></h4>
+                  <time datetime="2020-01-01">2022年7月16日</time>
                 </div>
               </div><!-- End recent post item-->
 
               <div class="post-item">
                 <div>
-                  <h4><a href="blog-details.html">Et dolores corrupti quae illo quod dolor</a></h4>
-                  <time datetime="2020-01-01">Jan 1, 2020</time>
+                  <h4><a href="blog-details.html">一辈子有很多爱而不得的人或事</a></h4>
+                  <time datetime="2020-01-01">2022年7月16日</time>
                 </div>
               </div><!-- End recent post item-->
 

@@ -182,38 +182,50 @@
 		display: none;
 	}
 }
-/*---------------ori-------------------*/
+/*---------------pri-------------------*/
 .hee-pri{
 	margin: 0;
+	margin-top: 2em;
 }
 .youtong-pri img{
 	position: relative;
 	top: 8em;
-	margin-left:10em;
-	width:120%;
+	margin-left:12%;
+	max-width: 35em;
 }
 .header-txt-pri{
 	margin-top: 20em;
-	margin-right: 9em;
-	line-height: 3em;
+	margin-right: 8em;
+	line-height: 2.5em;
 	text-align:right;
 	color: white;
-	
+}
+.header-txt-pri h1{
+	font-size: 3em;
+	font-weight:bold;
+	line-height: 1em;
+}
+.header-txt-pri p{
+	line-height: 1.5em;
+	font-size:1.2em;
+	margin-top: 2em;
 }
 .kiki-pri{
 	width: auto;
 	
-	background-color: chocolate;
+	background:url("img/bk2.jpg");
+
 	
 }
 .header-btn-pri{
 	padding: 1em;
 	padding-left: 12em;
+	width: 8em;
 	background-color: rgb(247, 237, 225);
 }
 .btn-custom-left-pri{
 	text-align: right;
-	margin-left: 45em;
+	margin-left: 70%;
 	margin-right: 5em;
 	text-decoration:none;
 	color: white;
@@ -223,6 +235,7 @@
 	padding-right:2em;
 	border-radius:10em ;
 	font-size: 1.5em;
+	transition:All 0.4s ease-in-out;
 }
 
 .btn-custom-left-pri:hover{
@@ -231,7 +244,59 @@
 	transition:All 0.4s ease-in-out;
 }
 
+@media screen and (max-width:990px){
+	.bea{
+		display: none;
+	}
+	.header-txt-pri{
+		justify-content: center;
+		text-align: center;
+		margin-top: 15em;
+		padding-bottom: 5em;
+		margin-right: 0;
+		line-height: 3em;
+		color: white;
 
+	}
+	
+}
+@media screen and (max-width:1490px){
+	.btn-custom-left-pri{
+		margin-left: 68%;
+	}
+	
+}
+@media screen and (max-width:1400px){
+	.btn-custom-left-pri{
+		margin-left: 66%;
+	}
+}
+@media screen and (max-width:1325px){
+	.btn-custom-left-pri{
+		margin-left: 60%;
+	}
+}
+@media screen and (max-width:1000px){
+	.btn-custom-left-pri{
+		margin:0 auto;
+		margin-left:38% ;
+		justify-content: center;
+	}
+}
+@media screen and (max-width:600px){
+	.btn-custom-left-pri{
+		margin:0 auto;
+		margin-left:35% ;
+		justify-content: center;
+	}
+}
+@media screen and (max-width:700px){
+	.btn-custom-left-pri{
+		margin:0 auto;
+		margin-left:30% ;
+		justify-content: center;
+	}
+}
 
 /*--------contact-------------------------------------------*/
 

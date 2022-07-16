@@ -25,6 +25,7 @@
       /*-------------导航栏----------------*/
       .navbar{
           background-color: white;
+          height: 5rem;
       }
       .nav-item{
           margin-left: 1.5em;
@@ -77,6 +78,28 @@
         background-color:rgb(247, 237, 225);
         color: chocolate;
       }
+      .nav-link:hover{
+                color: chocolate;  
+                font-weight: bolder;
+                border-bottom: .25rem solid transparent;
+                border-bottom-color: chocolate;
+                transition: all 0.3s;
+              }
+        
+              #active{
+                color: chocolate;
+                font-weight: bolder;
+                border-bottom: .25rem solid transparent;
+                border-bottom-color: chocolate;
+            }
+      /*--------------footer---------------*/
+			.footer {
+				color: #fff;
+				background: url("img/footer.jpg") top center no-repeat;
+				background-size: cover;
+				padding-top: 50px ;
+				position: relative;
+			}
   </style>
   </head>
 
@@ -93,7 +116,7 @@
       <div class="collapse navbar-collapse nav" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">首页</a>
+            <a class="nav-link" aria-current="page" href="index.html" id="active">首页</a>
           </li>
           <li class="nav-item">
               <a class="nav-link " aria-current="page" href="private.html">个人信件</a>
@@ -128,7 +151,7 @@
           <h1><strong>个人信件</strong></h1>
           <p>你会期待未来的自己吗？</p>
           <p>你希望自己到了很久以后还能保持些什么观点或者品格？</p>
-          <p><a class="btn btn-lg btn-light zoom" href="#">写一封信</a></p>
+          <p><a class="btn btn-lg btn-light zoom" href="private.html">写一封信</a></p>
         </div>
       </div>
     </div>
@@ -139,7 +162,7 @@
           <h1><strong>公共信件</strong></h1>
           <p>一个基于情感倾诉、烦恼咨询的多应用匿名社区。</p>
           <p>作为独立存在的微社交圈，供你分享生活乐趣，记录心情，吐露秘密，诉说心事，烦恼咨询。</p>
-          <p><a class="btn btn-lg btn-light zoom" href="#">去看看</a></p>
+          <p><a class="btn btn-lg btn-light zoom" href="public.html">去看看</a></p>
         </div>
       </div>
     </div>

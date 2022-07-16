@@ -13,13 +13,14 @@
             html{
                 overflow-x:hidden ;
             }
-            html,body{
+            body{
                 background-color: rgb(247, 237, 225);
             }
             
             /*-------------导航栏----------------*/
             .navbar{
                 background-color: white;
+                height: 5rem;
             }
             .nav-item{
                 margin-left: 1.5em;
@@ -72,6 +73,27 @@
                     margin-bottom: 1em;
                 }
             }
+            .kiki-pri{
+                background-size:120%;
+		        height: auto;
+                background:url(img/bk2.png) no-repeat;
+                background-color: antiquewhite;
+                
+            }
+            .nav-link:hover{
+                color: chocolate;  
+                font-weight: bolder;
+                border-bottom: .25rem solid transparent;
+                border-bottom-color: chocolate;
+                transition: all 0.3s;
+              }
+        
+              #active{
+                color: chocolate;
+                font-weight: bolder;
+                border-bottom: .25rem solid transparent;
+                border-bottom-color: chocolate;
+            }
         </style>
     </head>
     <body>
@@ -89,7 +111,7 @@
                       <a class="nav-link" aria-current="page" href="index.html">首页</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="private.html">个人信件</a>
+                        <a class="nav-link " aria-current="page" href="private.html" id="active">个人信件</a>
                       </li>
                     <li class="nav-item">
                       <a class="nav-link " aria-current="page" href="public.html">公开信件</a>
@@ -112,13 +134,13 @@
             <div class="hee-pri">
                 <!-- .row -->
                 <div class="kiki-pri row header-row">
-                     <div class="col-sm-5 col-md-4 col-lg-offset-1 header-img">
+                     <div class="bea col-sm-5 col-md-4 col-lg-offset-1 header-img">
                         <div class="carousel-slider header-slider animation" data-animation="animation-fade-in-down">
                             <div class="youtong-pri"><img  src="img/box.png"></div>
                             
                         </div>
                     </div>
-                    <div class="col-sm-7 col-md-8 col-lg-7">
+                    <div class="aa   col-lg-7">
                         <div class="header-txt-pri">
                             <h1>欢迎光临</h1>
                             <h1>TimeStamp</h1>

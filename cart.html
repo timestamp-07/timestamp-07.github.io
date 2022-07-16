@@ -24,6 +24,7 @@
             /*-------------导航栏----------------*/
             .navbar{
                 background-color: white;
+                height: 5rem;
             }
             .nav-item{
                 margin-left: 1.5em;
@@ -78,7 +79,20 @@
                 }
             }
             
-
+            .nav-link:hover{
+                color: chocolate;  
+                font-weight: bolder;
+                border-bottom: .25rem solid transparent;
+                border-bottom-color: chocolate;
+                transition: all 0.3s;
+              }
+        
+              #active{
+                color: chocolate;
+                font-weight: bolder;
+                border-bottom: .25rem solid transparent;
+                border-bottom-color: chocolate;
+            }
             /*--------------footer---------------*/
 			.footer {
 				color: #fff;
@@ -111,7 +125,7 @@
                       <a class="nav-link " aria-current="page" href="public.html">公开信件</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="shop.html">商店</a>
+                      <a class="nav-link" aria-current="page" href="shop.html" id="active">商店</a>
                     </li>
                   </ul> 
                   

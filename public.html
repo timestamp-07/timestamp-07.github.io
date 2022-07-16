@@ -7,22 +7,26 @@
         <link rel="stylesheet" href="css/home.css">
         <script src="js/homep.js"></script>
         <!-- Bootstrap -->
+       
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-		
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <style>
             html{
                 overflow-x:hidden ;
-            }
-            html,body{
-                background-color: rgb(247, 237, 225);
                 
             }
+            body{
+                background-color:rgb(247, 237, 225);
+            }
+            
             
             /*-------------导航栏----------------*/
             .navbar{
                 background-color: white;
+                height: 5rem;
             }
             .nav-item{
                 margin-left: 1.5em;
@@ -75,11 +79,25 @@
                     margin-bottom: 1em;
                 }
             }
+            .nav-link:hover{
+                color: chocolate;  
+                font-weight: bolder;
+                border-bottom: .25rem solid transparent;
+                border-bottom-color: chocolate;
+                transition: all 0.3s;
+              }
+        
+              #active{
+                color: chocolate;
+                font-weight: bolder;
+                border-bottom: .25rem solid transparent;
+                border-bottom-color: chocolate;
+            }
             /*-------------寄信----------------*/
             .note-title{
                 margin:0 auto;
                 text-align: center;
-                margin-top: 5em;
+                
             }
             
             .title-fi{
@@ -131,6 +149,13 @@
                 font-size: 1em;
                 color: chocolate;
             }
+            @media only screen and (max-width: 700px){
+			.mess{
+				display: block;
+			}
+			
+			
+		}
             /*--------------footer---------------*/
 			.footer {
 				color: #fff;
@@ -162,7 +187,7 @@
                         <a class="nav-link " aria-current="page" href="private.html">个人信件</a>
                       </li>
                     <li class="nav-item">
-                      <a class="nav-link " aria-current="page" href="public.html">公开信件</a>
+                      <a class="nav-link " aria-current="page" href="public.html" id="active">公开信件</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" aria-current="page" href="shop.html">商店</a>
@@ -177,36 +202,45 @@
         </nav>
 
         <!------------------------题头-------------------->
-        <div class="header-content">
-            <!-- .container -->
-            <div class="hee">
-                <!-- .row -->
-                <div class="kiki row header-row">
-                    
-                    <div class="col-sm-7 col-md-8 col-lg-7">
-                        <div class="header-txt">
-                            <h1>欢迎光临</h1>
-                            <h1>TimeStamp</h1>
-                            <p>在这里与世界各地的人们交心，在这里与世界各地的人们相识。</p>
+        <!-- #header -->
+        <header id="header">
+            <!-- .header-content -->
+            <div class="header-content">
+                <!-- .container -->
+                <div class="container">
+                    <!-- .row -->
+                    <div class="row header-row">
+                        <div class="ce">
+                            <div class="be ">
+                                <div class="header-txt">
+                                    <h1>欢迎光临<br>TimeStamp</h1>
+                                    <p>在这里你能将想说的话写成一封信，寄给陌生的信友们和未来的自己<br>让这个时代依旧保留那种安静的美好，感受到书信本身传递的沟通之美。</p>
+                                </div>
+                                <div class="header-btn">
+                                    <a href="send.html" class="btn-custom">写一封公开信</a>
+                                    <a href="post.html" class="btn-custom btn-border btn-icon smooth-scroll"> 随机进入一个分区</a>
+                                </div>
+                            </div>
                         </div>
-                        
-                    </div>
-                    
-                    <div class="yt col-sm-5 col-md-4 col-lg-offset-1 header-img">
-                        <div class="carousel-slider header-slider animation" data-animation="animation-fade-in-down">
-                            <div class="youtong"><img  src="img/box.png"></div>
-                            
+                        <div class="he-pg">
+                            <div class="col-sm-5 col-md-4 col-lg-offset-1 header-img">
+                                <div class="carousel-slider header-slider animation" data-animation="animation-fade-in-down">
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="header-btn">
-                            <a href="#" class="btn-custom-left" type="button">随机阅读</a>
-                            <a href="send.html" class="btn-custom-right" type="button"> 写一封信</a>
-                    </div>
+                    <!-- .row end -->
                 </div>
-                <!-- .row end -->
+                <!-- .container end -->
             </div>
-        </div>
-
+            <!-- .header-content end -->
+            
+            <div class="header-bg" style="background-image:url(img/bg/1.jpg);">
+                <div class="header-bg-overlay"></div>
+            </div>
+            
+        </header>
         <!------------------------信件浏览-------------------->
         <div class="note-title">
             <h1  class="title-fi">公开信件</h1>
@@ -218,35 +252,35 @@
             <div class="mee">
                 <a href="post.html"><span class="op"><img class="open-img" src="img/close.png" ></span></a>
                 <h5 class="date">关于学业</h5>
-                <h5 class="por">介绍介绍介绍介绍介绍</h5>
+                <h5 class="por">在这里你能说说你在学业上遇到的困境</h5>
             </div>
             
             <div class="mee">
                 <a href="post.html"><span class="op"><img class="open-img" src="img/close.png" ></span></a>
                 <h5 class="date">关于事业</h5>
-                <h5 class="por">介绍介绍介绍介绍介绍</h5>
+                <h5 class="por">在这里能释放你在工作上的压力</h5>
             </div>
             <div class="mee">
                 <a href="post.html"><span class="op"><img class="open-img" src="img/close.png" ></span></a>
                 <h5 class="date">关于家庭</h5>
-                <h5 class="por">介绍介绍介绍介绍介绍</h5>
+                <h5 class="por">在这里能尽情畅谈你在家里遇到的烦恼</h5>
             </div>
         </div>
         <div class="mess">
             <div class="mee">
                 <a href="post.html"><span class="op"><img class="open-img" src="img/close.png" ></span></a>
                 <h5 class="date">关于爱情</h5>
-                <h5 class="por">介绍介绍介绍介绍介绍</h5>
+                <h5 class="por">在这里你能说说你在感情中遇到的困扰</h5>
             </div>
             <div class="mee">
                 <a href="post.html"><span class="op"><img class="open-img" src="img/close.png" ></span></a>
                 <h5 class="date">关于生活</h5>
-                <h5 class="por">介绍介绍介绍介绍介绍</h5>
+                <h5 class="por">在这里充满着世界各地的生活点滴</h5>
             </div>
             <div class="mee">
                 <a href="post.html"><span class="op"><img class="open-img" src="img/close.png" ></span></a>
                 <h5 class="date">其他</h5>
-                <h5 class="por">介绍介绍介绍介绍介绍</h5>
+                <h5 class="por">在这里你能诉说你的小众故事</h5>
             </div>
         </div>
        
@@ -332,6 +366,8 @@
                 }
             }
         </script>
+        
+        
      </body>
 
     

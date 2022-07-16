@@ -9,10 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-	<!-- Library - Google Font Familys -->
-	<link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700%7cMontserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 	
-
 	<!-- Custom - Common CSS -->	
 	
 	<link rel="stylesheet" type="text/css" href="css/post.css">
@@ -38,6 +35,7 @@
 		/*-------------导航栏----------------*/
 		.navbar{
                 background-color: white;
+				height: 5rem;
             }
             .nav-item{
                 margin-left: 1.5em;
@@ -90,25 +88,41 @@
                     margin-bottom: 1em;
                 }
             }
+			.nav-link:hover{
+                color: chocolate;  
+                font-weight: bolder;
+                border-bottom: .25rem solid transparent;
+                border-bottom-color: chocolate;
+                transition: all 0.3s;
+              }
+        
+              #active{
+                color: chocolate;
+                font-weight: bolder;
+                border-bottom: .25rem solid transparent;
+                border-bottom-color: chocolate;
+            }
 			 /*-------------寄信----------------*/
 			 .note-title{
                 margin:0 auto;
+				font-size: 1.2em;
                 text-align: center;
                 margin-top: 8em;
 				margin-bottom: 3em;
             }
             
             .title-fi{
-                margin-bottom:0 ;
-                font-size: 1em;
+                margin-bottom:0.5 ;
+                font-size: 0.8em;
                 color: chocolate;
             }
            .un-line{
-                padding-bottom: 0.5em;
+                padding-bottom: 1.2em;
                 border-bottom: 0.15em solid chocolate;
-                margin-bottom:0.5em ;
+                margin-bottom:1em ;
                 font-size: 1.5em;
            }
+		   
 		   /*--------------footer---------------*/
 			.footer {
 				color: #fff;
@@ -139,7 +153,7 @@
                         <a class="nav-link " aria-current="page" href="private.html">个人信件</a>
                       </li>
                     <li class="nav-item">
-                      <a class="nav-link " aria-current="page" href="public.html">公开信件</a>
+                      <a class="nav-link " aria-current="page" href="public.html" id="active">公开信件</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" aria-current="page" href="shop.html">商店</a>
@@ -154,8 +168,11 @@
         </nav>
 		<!-- ----------------题头------------------ -->
 		<div class="note-title">
-            <h1  class="title-fi">公开信件</h1>
-            <span class="un-line">选择一个分区</span>
+            <span class="un-line">关于爱情</span>
+			<h1  class="title-fi">
+				在这里你能说说你在感情中遇到的困扰
+			</h1>
+            
         </div>
 			<!-- Page Content -->
 			<div class="container-fluid no-left-padding no-right-padding page-content">
@@ -166,162 +183,216 @@
 							<!-- Row -->
 							<div class="row blog-masonry-list">
 								<div class="col-lg-4 col-sm-6 blog-masonry-box">
-									<div class="type-post">
+									
+									<div class="type-post" onclick="window.open('blogEn.html')">
 										
 										<div class="entry-content">
 											<div class="entry-header">	
-												<span class="post-category"><a href="#" title="Travel">2022年7月16日</a></span>
-												<h3 class="entry-title"><a href="#" title="Charming Evening Field">DDL好痛苦</a></h3>
+												<span class="post-category"><h6>2022年7月16日</h6></span>
+												<span class="un-line"><h3 class="entry-title"><a>有没有一个想忘又忘不掉的人？</a></h3></span>
+											</div>	
+											<p>
+												嗨嗨你好~心里一直想倾诉点什么，但又不知道从何说起。心里深处有那么一个人不管过去多少年想起来的时候还是会有那么的心痛。还得记得10多年前的那天，第一次遇到你，
+												有过开心有过泪水。也许是年不更事，也许是无理取闹，才使得我和你成为两条平行线，各走各的。
+												不知道从什么时候开始，每当晚上睡觉的时候就开始回想以前，多想在回到从前。不管做什么的时候都会不经意的想到你。遇到什么事的时候都想和你说说。即使不在一起还是愿意和你说。可是现在。。。。。
+												几年以后的一次联系我知道你已经结婚，但是还忍不住的和你聊天，从你的口中听说你们的关系不怎么好，心里还有那么一点的窃喜。
+
+											</p>							
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-lg-4 col-sm-6 blog-masonry-box">
+									
+									<div class="type-post" onclick="window.open('blogEn.html')">
+										
+										<div class="entry-content">
+											<div class="entry-header">	
+												<span class="post-category"><h6>2022年7月16日</h6></span>
+												<span class="un-line"><h3 class="entry-title"><a>厚德载爱</a></h3></span>
 											</div>								
-											<p>为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？</p>
-											<a href="blogEn.html" title="Read More">点击阅读</a>
+											<p>
+												你知道吗。。某东是我的心瘾。挂念某东的那个魂魄，就如吸食鸦片的人得不到鸦片，在角落里瑟瑟发抖，它抠着自己的手脚，
+												全身却似乎被蛊虫爬过啃食，任由并不干净的血液在躯体内循环。我呀我，是何种勇气，敢去扮演绝世大情圣，换取理智的怜悯？
+												而理智并没有怜悯。它如一个武林高手，用腹语，用一种天外之音告诉那个可怜的魂魄------爱自己才能爱别人……
+
+											</p>
 										</div>
 									</div>
 								</div>
 								<div class="col-lg-4 col-sm-6 blog-masonry-box">
-									<div class="type-post">
+									
+									<div class="type-post" onclick="window.open('blogEn.html')">
 										
 										<div class="entry-content">
 											<div class="entry-header">	
-												<span class="post-category"><a href="#" title="Travel">2022年7月16日</a></span>
-												<h3 class="entry-title"><a href="#" title="Charming Evening Field">DDL好痛苦</a></h3>
-											</div>								
-											<p>为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？</p>
-											<a href="blogEn.html" title="Read More">点击阅读</a>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-4 col-sm-6 blog-masonry-box">
-									<div class="type-post">
-										
-										<div class="entry-content">
-											<div class="entry-header">	
-												<span class="post-category"><a href="#" title="Travel">2022年7月16日</a></span>
-												<h3 class="entry-title"><a href="#" title="Charming Evening Field">DDL好痛苦</a></h3>
-											</div>								
-											<p>为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？</p>
-											<a href="blogEn.html" title="Read More">点击阅读</a>
+												<span class="post-category"><h6>2022年7月15日</h6></span>
+												<span class="un-line"><h3 class="entry-title"><a>异地恋女友</a></h3></span>
+											</div>		
+											<p>
+												异地恋女朋友在国外读书。
+												这个假期以来就感觉关系变的疏远。
+												总是有意疏远我。
+												找不到话题聊天。
+												甚至想和她打个电话视频一下都成了奢望。
+												总是说今天很忙，今天很累，今天的事情多。
+												暑假和几个同学吃饭都看出我们的状态不对。
+												然后呢？想找她聊她在实习。想找她实习的时候出去玩结果她又说好累晚上不想出去。结果晚上我的朋友圈里就出现的她去商场的照片。
+												最骚的是前一天说自己感冒不舒服，明天没法出去，第二天去买东西的时候就在商场看到她。还假惺惺的解释是亲戚拉着她出来的。现在想想她他妈的一年头疼感冒又累又忙在家呆着这种说辞我竟然信了，呵呵呵。
+												还有自己说不喜欢照相，结果发现不是不喜欢照相，是不喜欢和我照相，和别人照的可开心了……
+											</p>						
 										</div>
 									</div>
 								</div>
 							
 								<div class="col-lg-4 col-sm-6 blog-masonry-box">
-									<div class="type-post">
+									
+									<div class="type-post" onclick="window.open('blogEn.html')">
 										
 										<div class="entry-content">
 											<div class="entry-header">	
-												<span class="post-category"><a href="#" title="Travel">2022年7月16日</a></span>
-												<h3 class="entry-title"><a href="#" title="Charming Evening Field">DDL好痛苦</a></h3>
-											</div>								
-											<p>为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？</p>
-											<a href="blogEn.html" title="Read More">点击阅读</a>
+												<span class="post-category"><h6>2022年7月13日</h6></span>
+												<span class="un-line"><h3 class="entry-title"><a>一辈子有很多爱而不得的人或事</a></h3></span>
+											</div>	
+											<p>
+												你，是一个人见人爱的姑娘，包括我
+												有时候命运就是作弄人，可能刚好遇见，可能刚好相知，可能刚好合拍，可也刚好，不能在一起。或许正如那句，我遇见你的时候就花光了我所有的运气，所以我已经没有可以陪你走下去了的幸运了。	
+												我不是一个情商为“0”的人									
+												每次一起聊天，谈及感情，我总在逃避	
+												明知是错，明知无果，偏又无法控制的思绪，睁眼闭眼是你，半醉半醒是你。我不愿你伤心，所以不能打扰你，愿所有的情感都变成秘密，埋在心里，默默的关注着你，一直朋友般的走下去。
+												随记
+												你好，我现在心里好多的话，说不出来，打了一遍又一遍 ，却都删掉了
+												刚刚在群里看到一个女生说，“今天我被一个人伤了两回，我彻底崩溃了!”
+												我想年轻真好...
+												
+											</p>							
 										</div>
 									</div>
 								</div>
 								<div class="col-lg-4 col-sm-6 blog-masonry-box">
-									<div class="type-post">
+									
+									<div class="type-post" onclick="window.open('blogEn.html')">
 										
 										<div class="entry-content">
 											<div class="entry-header">	
-												<span class="post-category"><a href="#" title="Travel">2022年7月16日</a></span>
-												<h3 class="entry-title"><a href="#" title="Charming Evening Field">DDL好痛苦</a></h3>
-											</div>								
-											<p>为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？</p>
-											<a href="blogEn.html" title="Read More">点击阅读</a>
+												<span class="post-category"><h6>2022年7月12日</h6></span>
+												<span class="un-line"><h3 class="entry-title"><a>和认识多年的朋友暧昧</a></h3></span>
+											</div>	
+											<p>
+												哈咯~我和他认识十多年了，高中因为他留级，所以不太联系了，大二寒假回家的时候喝酒碰上了，
+												我一直知道他有女朋友，那天我们在外面开放睡的，因为玩得太晚了，开的双床房，
+												我们都睡下以后，他说很冷，于是就把床推来和我的并在一起，然后抱着我睡，
+												就这样什么都没做，之后的日子我们隔三差五就会在外面睡，就互相拥抱着，什么都不做，
+												就这种关系一年过去了，他的朋友们都知道我，叫我嫂子，可是他总会跟他的朋友们解释说我们只是朋友，
+												却又会和我开房睡觉，从一开始抱着我到后来夏天一起睡的时候会摸我，我们都很默契的没有提他的女朋友，
+												虽然我和他从没有发生过关系，但一直这样拖着耗着暧昧着……
+											</p>							
 										</div>
 									</div>
 								</div>
 								<div class="col-lg-4 col-sm-6 blog-masonry-box">
-									<div class="type-post">
+									
+									<div class="type-post" onclick="window.open('blogEn.html')">
 										
 										<div class="entry-content">
 											<div class="entry-header">	
-												<span class="post-category"><a href="#" title="Travel">2022年7月16日</a></span>
-												<h3 class="entry-title"><a href="#" title="Charming Evening Field">DDL好痛苦</a></h3>
-											</div>								
-											<p>为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？</p>
-											<a href="blogEn.html" title="Read More">点击阅读</a>
+												<span class="post-category"><h6>2022年7月11日</h6></span>
+												<span class="un-line"><h3 class="entry-title"><a>你自己呢</a></h3></span>
+											</div>	
+											<p>
+												今年就三十岁啦，不知道你有没有结婚呢，结婚的话不知道结婚照片上的笑容是不是都是发自内心的呢？
+												要是没结婚可就太衰啦，大龄剩男，哈哈哈
+												也不知道现在的你是不是还是脾气好，性格好呢，三十岁啦，这些还重要吗？哈哈
+												也不知道现在家里是不是那样呢，有没有再添点东西呢，还在坚持带便当呢？
+												也不知道现在有代步车了吗？没有的话大概是没结婚吧，哈哈，毕竟想的结婚以后再给媳妇买的。因为你不想开车，只喜欢坐车，哈哈。也不知道有没有上路了呢
+												结婚了的话，那个女孩是你想结婚的女孩吗？还是将就的呢，婚后生活是你所希望的一日三餐四季俩人呢
+												我在个性签名上写到，“小唐 要坚强”，希望换了份工作，我的生活会越来 越好，不会再让那些各种费用压的喘不过气来....
+
+											</p>							
 										</div>
 									</div>
 								</div>
 								<div class="col-lg-4 col-sm-6 blog-masonry-box">
-									<div class="type-post">
+									
+									<div class="type-post" onclick="window.open('blogEn.html')">
 										
 										<div class="entry-content">
 											<div class="entry-header">	
-												<span class="post-category"><a href="#" title="Travel">2022年7月16日</a></span>
-												<h3 class="entry-title"><a href="#" title="Charming Evening Field">DDL好痛苦</a></h3>
+												<span class="post-category"><h6>2022年7月10日</h6></span>
+												<span class="un-line"><h3 class="entry-title"><a>后来的后来</a></h3></span>
 											</div>								
-											<p>为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？</p>
-											<a href="blogEn.html" title="Read More">点击阅读</a>
+											<p>
+												后来我没那么难受了，恍恍惚惚过了好久回过神发现其实你也没那么好，因为你我活得并不像自己，分开之后我慢慢懂得了自律学习知道了爱自己，
+												爱情也变得不那么重要了我只想要自己开心快乐家人健康常在。我不否认看见你的朋友圈我会有那么一丝不舒服可是也没什么大不了，我要学会释怀和宽容，
+												这一课于我而言很重要。
+											</p>
+									
 										</div>
 									</div>
 								</div>
 								<div class="col-lg-4 col-sm-6 blog-masonry-box">
-									<div class="type-post">
+									
+									<div class="type-post" onclick="window.open('blogEn.html')">
 										
 										<div class="entry-content">
 											<div class="entry-header">	
-												<span class="post-category"><a href="#" title="Travel">2022年7月16日</a></span>
-												<h3 class="entry-title"><a href="#" title="Charming Evening Field">DDL好痛苦</a></h3>
+												<span class="post-category"><h6>2022年7月9日</h6></span>
+												<span class="un-line"><h3 class="entry-title"><a>一件小事</a></h3></span>
 											</div>								
-											<p>为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？</p>
-											<a href="blogEn.html" title="Read More">点击阅读</a>
+											<p>嘿，最近好嘛？累不累？是不是晒黑很多啦？哈哈哈，我想那是肯定的~~有没有瘦下来一点，还是很期待你瘦下来的样子···
+												妈妈的治疗快结束了把 ？这一年是不是觉得好多无奈好多委屈，又无处可说呢？
+												诶呀~没事的，人嘛，不都是这样各种经历过后才能见到彩虹嘛，一年了，除了治疗费用，是否自己也还是存了点余粮呢?毕竟治疗费用这么大，
+												还是希望你在这期间能有好好反思过自己，要多想想借来的费用，一笔一笔的记好，每一笔每一个人的恩情都是需要偿还的。望谨记！要学会约束自己才是成长。
+											</p>
 										</div>
 									</div>
 								</div>
 								<div class="col-lg-4 col-sm-6 blog-masonry-box">
-									<div class="type-post">
+									
+									<div class="type-post" onclick="window.open('blogEn.html')">
 										
 										<div class="entry-content">
 											<div class="entry-header">	
-												<span class="post-category"><a href="#" title="Travel">2022年7月16日</a></span>
-												<h3 class="entry-title"><a href="#" title="Charming Evening Field">DDL好痛苦</a></h3>
+												<span class="post-category"><h6>2022年7月9日</h6></span>
+												<span class="un-line"><h3 class="entry-title"><a>一些些反思</a></h3></span>
 											</div>								
-											<p>为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？</p>
-											<a href="blogEn.html" title="Read More">点击阅读</a>
+											<p>20:56分，曾经自己自以为是放弃了好多荒废了学业，好多次在自己的本子上郑重的写下，练习书法，打字，excel，word，英语，锻炼，学习专业课，
+												现在呢还是老样子，没有任何改变，马上要毕业了，也即将工作，发现自己对于专业课根本一无所知，现在的生活很颓废，睡觉打游戏，吃饭，
+												好颓废时间一天一天的过去，我被时间甩的老远，现在的自己好讨厌，思维僵化，眼界不开，学识不高，
+												天马行空的想着一些个事情刷着朋友圈羡慕身边同学们的生活从未脚踏实地的为自己做点事情。回首以往，一个又一个错误，铸就了现在的我，
+												我却还在里面麻木不仁，现在需要自己去做决定时才发现，自己错的一塌糊涂，却还在里面自我感觉良好。</p>
 										</div>
 									</div>
 								</div>
 								<div class="col-lg-4 col-sm-6 blog-masonry-box">
-									<div class="type-post">
+									
+									<div class="type-post" onclick="window.open('blogEn.html')">
 										
 										<div class="entry-content">
 											<div class="entry-header">	
-												<span class="post-category"><a href="#" title="Travel">2022年7月16日</a></span>
-												<h3 class="entry-title"><a href="#" title="Charming Evening Field">DDL好痛苦</a></h3>
+												<span class="post-category"><h6>2022年7月16日</h6></span>
+												<span class="un-line"><h3 class="entry-title"><a>你好呀</a></h3></span>
 											</div>								
-											<p>为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？</p>
-											<a href="blogEn.html" title="Read More">点击阅读</a>
+											<p>信友你好呀~最近生活太无趣了。我总幻想着自己的来一场说走就走的旅行，可也总是因为学习脱不开身。
+												虽然我也喜欢悠闲宁静的生活，但是我更期待着生活中的每一刻美好。想去下着雨的西安感受古城里的安静；
+												想去新疆的喀纳斯欣赏神明的后花园；想去八九月的古镇沉浸在江南烟雨中。我也好想去海边啊。</p>
 										</div>
 									</div>
 								</div>
 								<div class="col-lg-4 col-sm-6 blog-masonry-box">
-									<div class="type-post">
+									
+									<div class="type-post" onclick="window.open('blogEn.html')">
 										
 										<div class="entry-content">
 											<div class="entry-header">	
-												<span class="post-category"><a href="#" title="Travel">2022年7月16日</a></span>
-												<h3 class="entry-title"><a href="#" title="Charming Evening Field">DDL好痛苦</a></h3>
+												<span class="post-category"><h6>2022年7月16日</h6></span>
+												<span class="un-line"><h3 class="entry-title"><a>阴霾总会过去！</a></h3></span>
 											</div>								
-											<p>为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？</p>
-											<a href="blogEn.html" title="Read More">点击阅读</a>
+											<p>清晨醒来，神清气爽，希望一整天的好心情！阴霾总会过去！只想说句信友加油！！</p>
 										</div>
 									</div>
 								</div>
-								<div class="col-lg-4 col-sm-6 blog-masonry-box">
-									<div class="type-post">
-										
-										<div class="entry-content">
-											<div class="entry-header">	
-												<span class="post-category"><a href="#" title="Travel">2022年7月16日</a></span>
-												<h3 class="entry-title"><a href="#" title="Charming Evening Field">DDL好痛苦</a></h3>
-											</div>								
-											<p>为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？为什么放假一个月了我还在痛苦DDL！？</p>
-											<a href="blogEn.html" title="Read More">点击阅读</a>
-										</div>
-									</div>
-								</div>
+								
 							</div><!-- Row /- -->
 							
 						</div>
