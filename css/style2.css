@@ -313,3 +313,39 @@ letter-spacing: 5px;}
     color: #fff;
     font-weight: bolder;
     }
+/*-------------login----------------*/
+.loginin{
+	position: fixed;
+	height: 70px;
+	width: 70px;
+	padding: 0;
+	border: none;
+	border-radius: 50%;
+	left: 92%;
+	top:68%;
+	color: white;
+	background-color: chocolate;
+	transition:All 0.4s ease-in-out;
+  display: none;
+  
+}
+.loginin:hover{
+	color: chocolate;
+	background-color: white;
+	transition:All 0.4s ease-in-out;
+}
+@media screen and (max-width:1000px){
+	.loginin{
+		left:90%;
+		height: 60px;
+		width: 60px;
+    display: block;
+	}
+}
+@media screen and (max-width:700px){
+	.loginin{
+		left:80%;
+		height: 60px;
+		width: 60px;
+	}
+}
