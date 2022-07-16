@@ -6,17 +6,16 @@ body{
 .btn{
   font-size: 18px;
   border: 2px solid #8E7D60;
-padding:5px 10px;
+  padding:5px 10px;
   text-align: center;
   letter-spacing: 5px;
   color: #8E7D60;
   margin-bottom: 30px;
-background:transparent;
 }
 .btn:hover,.btn:focus,.btn.active{
-  color: #ffffff;
-  background-color:#8E7D60;
-outline:none;
+  background-color:#D3BD9F;
+  outline:none;
+  font-weight: bolder;
 }
 
 .site-blocks-table {
@@ -313,39 +312,40 @@ letter-spacing: 5px;}
     color: #fff;
     font-weight: bolder;
     }
-/*-------------login----------------*/
-.loginin{
-	position: fixed;
-	height: 70px;
-	width: 70px;
-	padding: 0;
-	border: none;
-	border-radius: 50%;
-	left: 92%;
-	top:68%;
-	color: white;
-	background-color: chocolate;
-	transition:All 0.4s ease-in-out;
-  display: none;
-  
-}
-.loginin:hover{
-	color: chocolate;
-	background-color: white;
-	transition:All 0.4s ease-in-out;
-}
-@media screen and (max-width:1000px){
-	.loginin{
-		left:90%;
-		height: 60px;
-		width: 60px;
-    display: block;
-	}
-}
-@media screen and (max-width:700px){
-	.loginin{
-		left:80%;
-		height: 60px;
-		width: 60px;
-	}
-}
+
+    /*-------------login----------------*/
+    .loginin{
+      position: fixed;
+      height: 70px;
+      width: 70px;
+      padding: 0;
+      border: none;
+      border-radius: 50%;
+      left: 92%;
+      top:68%;
+      color: white;
+      background-color: chocolate;
+      transition:All 0.4s ease-in-out;
+      display: none;
+      
+    }
+    .loginin:hover{
+      color: rgb(255, 255, 255);
+      background-color: rgb(239, 152, 91);
+      transition:All 0.4s ease-in-out;
+    }
+    @media screen and (max-width:1000px){
+      .loginin{
+        left:90%;
+        height: 60px;
+        width: 60px;
+        display: block;
+      }
+    }
+    @media screen and (max-width:700px){
+      .loginin{
+        left:80%;
+        height: 60px;
+        width: 60px;
+      }
+    }
