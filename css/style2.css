@@ -113,7 +113,7 @@ letter-spacing: 5px;}
       color: #000000 !important;
     letter-spacing: 5px; }
 
-      .form-control,{
+      /* .form-control,{
         border: none;
         font-size: 16px;
         letter-spacing: 5px;
@@ -121,7 +121,7 @@ letter-spacing: 5px;}
         background: transparent;
         border: 1px solid #43434d;
         border-radius: 0;
-        color: #000000; }
+        color: #000000; } */
         .form-control:active, .form-control:focus{
           color: #000000;
           letter-spacing: 5px;
@@ -334,34 +334,12 @@ letter-spacing: 5px;}
       background-color: rgb(239, 152, 91);
       transition:All 0.4s ease-in-out;
     }
-    @media screen and (max-width:1000px){
-      .loginin{
-        left:90%;
-        height: 60px;
-        width: 60px;
-        display: block;
-      }
-    }
-    @media screen and (max-width:700px){
-      .loginin{
-        left:80%;
-        height: 60px;
-        width: 60px;
-      }
-    }
     .hee-pri{
     	margin: 0;
     	margin-top: 2em;
     }
-    .youtong-pri img{
-    	position: relative;
-    	top: 8em;
-    	margin-left:12%;
-    	max-width: 35em;
-    }
     .header-txt-pri{
     	margin-top: 20em;
-    	margin-right: 8em;
     	padding: 1em;
     	line-height: 2.5em;
     	text-align:right;
@@ -374,14 +352,9 @@ letter-spacing: 5px;}
     }
     .header-txt-pri p{
     	line-height: 1.5em;
-    	padding: 1em;
     	font-size:1.2em;
     	margin-top: 2em;
     }
     .kiki-pri{
     	width: auto;
-
-    	background:url("img/bk2.jpg");
-
-
     }

@@ -304,6 +304,8 @@ button.focus, button:focus{
 /* blog En */
 .blog .blog-details {
   background-color: #F2F2F2;
+  /* background-image:url(img/paper1.jpg); */
+  /* style="background-image:url(img/paper2.jpg) ; */
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   padding: 30px;
 }
@@ -331,7 +333,7 @@ button.focus, button:focus{
   color: #6c757d;
 }
 
-.blog .blog-details .meta-top ul {
+.detail {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -340,11 +342,14 @@ button.focus, button:focus{
   margin: 0;
 }
 
-.blog .blog-details .meta-top ul li+li {
-  padding-left: 20px;
+.blog .blog-details .meta-top i {
+  font-size: 16px;
+  margin-right: 8px;
+  line-height: 0;
+  color:#594834;
 }
 
-.blog .blog-details .meta-top i,li {
+.icon,.pf{
   font-size: 16px;
   margin-right: 8px;
   line-height: 0;
@@ -485,18 +490,6 @@ button.focus, button:focus{
   margin-bottom: 25px;
 }
 
-/* .blog .comments .reply-form .btn-primary {
-  border-radius: 4px;
-  padding: 10px 20px;
-  border: 0;
-  background-color: #BFA78A;
-}
-
-.blog .comments .reply-form .btn-primary:hover {
-  color: white;
-  background-color: #594834;
-} */
-
 /* Blog sidebar */
 .blog .sidebar {
   padding: 30px;
@@ -529,14 +522,14 @@ button.focus, button:focus{
   font-weight: bold;
 }
 
-.blog .sidebar .recent-posts h4 a {
-  color: #68533c;
+.recent {
+  color: #896d4f;
   transition: 0.3s;
   text-decoration: none;
 }
 
 .blog .sidebar .recent-posts h4 a:hover {
-  color: #594834;
+  color: #241d15;
   text-decoration: none;
 }
 
