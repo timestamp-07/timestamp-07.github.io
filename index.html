@@ -69,13 +69,27 @@
           color:chocolate ;
       }
 
+      .rounded-pill:hover{
+        border-radius: 50%;
+        width:40px;
+        border: 2px solid chocolate;
+      }
+      @media screen and (max-width:1600px){
+        .profile{
+            display: none;
+          }
+      }
+
       @media screen and (max-width:1000px){
           .navbar{
                 background-color: white;
                 height: auto;
             }
-          .login{
+          .login,.rounded-pill{
               display: none;
+          }
+          .profile{
+            display: block;
           }
           .collapse{
               justify-content: center;
@@ -200,92 +214,6 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-
-<!-- counter -->
-<section id="stats-counter" class="stats-counter section-bg reveal" style="background-color:rgb(247, 237, 225); padding-bottom: 30px;">
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-3 col-md-6">
-        <div class="stats-item d-flex align-items-center w-100 h-100">
-          <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
-          <div>
-            <span id="Clients">0</span>
-            <p>每小时活跃用户</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6">
-        <div class="stats-item d-flex align-items-center w-100 h-100">
-          <i class="bi bi-journal-richtext color-orange flex-shrink-0"></i>
-          <div>
-            <span id="Projects">0</span>
-            <p>个人信件</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6">
-        <div class="stats-item d-flex align-items-center w-100 h-100">
-          <i class="bi bi-headset color-green flex-shrink-0"></i>
-          <div>
-            <span id="Supports">0</span>
-            <p>公共信件</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6">
-        <div class="stats-item d-flex align-items-center w-100 h-100">
-          <i class="bi bi-people color-pink flex-shrink-0"></i>
-          <div>
-            <span id="Partners">0</span>
-            <p>注册用户</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<!-- intro -->
-<section id="constructions" class="constructions">
-  <div class="container">
-
-    <div class="section-header reveal">
-      <h2>About Us</h2>
-      <h3>关于我们</h3>
-
-    </div>
-      <div class="row reveal">
-        <div class="col-md-6 gx-5 mb-4">
-          <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
-            <img src="img/main5.jpg" class="img-fluid">
-          </div>
-        </div>
-
-        <div class="col-md-6 gx-5 mb-4">
-          <h4><strong>宗旨</strong></h4>
-          <p class="text-muted">
-            在这里你将通过“书信”的方式学会表达情感、学会诉说衷肠、认识到真正的自己并学会与自己沟通。
-            让思绪在经过时间与空间的发酵之后，寄到你面前，回顾过去的生活点滴。
-          </p>
-          <p><strong>书·信</strong></p>
-          <p class="text-muted">
-            书信作为一种非常浪漫的表达情感的方式，展信时看到对方烙在纸上的笔迹，就能感受到别样的欢喜。
-            有句话叫“见字如晤”就是这个道理。光是想着书信跋山涉水地被送到你的手中，
-            就足够使人开心了，更不用说飞鸽传书、鱼传尺素、“快马加鞭未下鞍”和“愿把信件托付给那悠悠长江上翱翔的鱼鹰”的浪漫了。
-            <br><br>
-            如果可以的话，我也想在夜晚埋首台灯下写一些字，把心绪寄给你。
-          </p>
-        </div>
-      </div>
-    </div>
-</section>
 
 <!-- Service -->
 <section id="services" class="services section-bg">
@@ -470,7 +398,7 @@
     <!-- <div class="py-5"> -->
       <div class="container px-4 px-lg-5 reveal">
           <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-              <div class="col mb-5 zoom">
+              <a href="shop1.html" style="text-decoration:none;color: black;"><div class="col mb-5 zoom">
                   <div class="card h-100">
                       <!-- Product image-->
                       <img class="card-img-top" src="img/merch1.jpg" alt="...">
@@ -484,8 +412,8 @@
                           </div>
                       </div>
                   </div>
-              </div>
-              <div class="col mb-5 zoom">
+              </div></a>
+              <a href="shop1.html" style="text-decoration:none;color: black;"><div class="col mb-5 zoom">
                 <div class="card h-100">
                     <!-- Product image-->
                     <img class="card-img-top" src="img/merch2.jpg" alt="...">
@@ -499,8 +427,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col mb-5 zoom">
+            </div></a>
+            <a href="shop1.html" style="text-decoration:none;color: black;"><div class="col mb-5 zoom">
               <div class="card h-100">
                   <!-- Product image-->
                   <img class="card-img-top" src="img/merch3.png" alt="...">
@@ -514,8 +442,8 @@
                       </div>
                   </div>
               </div>
-          </div>
-          <div class="col mb-5 zoom">
+          </div></a>
+          <a href="shop1.html" style="text-decoration:none;color: black;"><div class="col mb-5 zoom">
             <div class="card h-100">
                 <!-- Product image-->
                 <img class="card-img-top" src="img/merch4.png" alt="...">
@@ -529,7 +457,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div></a>
       </div>
     </div>
     <div class="container-fluid position-relative zoom">
@@ -538,6 +466,93 @@
     </div>
   </div>
   </div>
+</section>
+
+
+<!-- counter -->
+<section id="stats-counter" class="stats-counter section-bg reveal" style="background-color:rgb(247, 237, 225);">
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
+          <div>
+            <span id="Clients">0</span>
+            <p>每小时活跃信友</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="bi bi-journal-richtext color-orange flex-shrink-0"></i>
+          <div>
+            <span id="Projects">0</span>
+            <p>个人信件</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="bi bi-headset color-green flex-shrink-0"></i>
+          <div>
+            <span id="Supports">0</span>
+            <p>公共信件</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="bi bi-people color-pink flex-shrink-0"></i>
+          <div>
+            <span id="Partners">0</span>
+            <p>注册信友</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- intro -->
+<section id="constructions" class="constructions section-bg">
+  <div class="container">
+
+    <div class="section-header reveal">
+      <h2>About Us</h2>
+      <h3>关于我们</h3>
+
+    </div>
+      <div class="row reveal">
+        <div class="col-md-6 gx-5 mb-4">
+          <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+            <img src="img/main5.jpg" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="col-md-6 gx-5 mb-4">
+          <h4><strong>宗旨</strong></h4>
+          <p class="text-muted">
+            在这里你将通过“书信”的方式学会表达情感、学会诉说衷肠、认识到真正的自己并学会与自己沟通。
+            让思绪在经过时间与空间的发酵之后，寄到你面前，回顾过去的生活点滴。
+          </p>
+          <p><strong>书·信</strong></p>
+          <p class="text-muted">
+            书信作为一种非常浪漫的表达情感的方式，展信时看到对方烙在纸上的笔迹，就能感受到别样的欢喜。
+            有句话叫“见字如晤”就是这个道理。光是想着书信跋山涉水地被送到你的手中，
+            就足够使人开心了，更不用说飞鸽传书、鱼传尺素、“快马加鞭未下鞍”和“愿把信件托付给那悠悠长江上翱翔的鱼鹰”的浪漫了。
+            <br><br>
+            如果可以的话，我也想在夜晚埋首台灯下写一些字，把心绪寄给你。
+          </p>
+        </div>
+      </div>
+    </div>
 </section>
 
 <!-- footer -->

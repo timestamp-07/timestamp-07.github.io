@@ -62,14 +62,27 @@
       .navbar-toggler:focus{
           color:chocolate ;
       }
+      .rounded-pill:hover{
+        border-radius: 50%;
+        width:40px;
+        border: 2px solid chocolate;
+      }
+      @media screen and (max-width:1600px){
+        .profile{
+            display: none;
+          }
+      }
 
       @media screen and (max-width:1000px){
           .navbar{
                 background-color: white;
                 height: auto;
             }
-          .login,.blog .sidebar{
+          .login,.rounded-pill{
               display: none;
+          }
+          .profile{
+            display: block;
           }
           .collapse{
               justify-content: center;
@@ -136,6 +149,14 @@
           width: 60px;
         }
       }
+ /*--------------footer---------------*/
+			.footer {
+				color: #fff;
+				background: url("img/footer.jpg") top center no-repeat;
+				background-size: cover;
+				padding-top: 50px ;
+				position: relative;
+			}
     </style>
   </head>
 
@@ -162,7 +183,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="shop1.html">商店</a>
-          </li>
+          </li>    
         </ul>
 
       </div>
@@ -174,7 +195,7 @@
 
 <!-- ======= Blog Details Section ======= -->
 <section id="blog" class="blog" style="padding-top:100px ;">
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
+  <div class="container">
 
     <div class="row ">
 
@@ -184,8 +205,8 @@
           <h2 class="title">厚德载爱</h2>
 
           <div class="meta-top">
-            <ul>
-              <li class="d-flex align-items-center"><i class="bi bi-person"></i>月牙湾</li>
+            <ul class="detail">
+              <li class="d-flex align-items-center icon"><i class="bi bi-person pf"></i>月牙湾</li>
               <li class="d-flex align-items-center"><i class="bi bi-clock"></i><time>2022年7月16日</time></li>
             </ul>
           </div><!-- End meta top -->
@@ -315,35 +336,35 @@
 
               <div class="post-item mt-3">
                 <div>
-                  <h4><a href="blog-details.html">莫名其妙的相亲</a></h4>
+                  <h4><a href="blogEn.html" class="recent">莫名其妙的相亲</a></h4>
                   <time datetime="2020-01-01">2022年7月30日</time>
                 </div>
               </div><!-- End recent post item-->
 
               <div class="post-item">
                 <div>
-                  <h4><a href="blog-details.html">有没有那么一个想忘又忘不掉的人？</a></h4>
+                  <h4><a href="blogEn.html" class="recent">有没有那么一个想忘又忘不掉的人？</a></h4>
                   <time datetime="2020-01-01">2022年7月16日</time>
                 </div>
               </div><!-- End recent post item-->
 
               <div class="post-item">
                 <div>
-                  <h4><a href="blog-details.html">异地恋女友</a></h4>
+                  <h4><a href="blogEn.html" class="recent">异地恋女友</a></h4>
                   <time datetime="2020-01-01">2022年7月16日</time>
                 </div>
               </div><!-- End recent post item-->
 
               <div class="post-item">
                 <div>
-                  <h4><a href="blog-details.html">和认识多年的朋友暧昧</a></h4>
+                  <h4><a href="blogEn.html" class="recent">和认识多年的朋友暧昧</a></h4>
                   <time datetime="2020-01-01">2022年7月16日</time>
                 </div>
               </div><!-- End recent post item-->
 
               <div class="post-item">
                 <div>
-                  <h4><a href="blog-details.html">一辈子有很多爱而不得的人或事</a></h4>
+                  <h4><a href="blogEn.html" class="recent">一辈子有很多爱而不得的人或事</a></h4>
                   <time datetime="2020-01-01">2022年7月16日</time>
                 </div>
               </div><!-- End recent post item-->
@@ -359,9 +380,72 @@
   </div>
 </section><!-- End Blog Details Section -->
 
+<!-- footer -->
+<footer id="footer" class="footer">
+
+  <div class="footer-content position-relative">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6 col-md-6">
+          <div class="footer-info">
+            <h3 style="color:white;">TIMESTAMP</h3>
+            <p>
+              一个专属于您的时间角落<br><br>
+              <strong>电话号码:</strong> +1234567890<br>
+              <strong>邮箱:</strong> timestamp123@email.com<br>
+            </p>
+            <div class="social-links d-flex mt-3">
+              <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+            </div><br>
+            &copy; Copyright <strong><span>TIMESTAMP</span></strong>. All Rights Reserved
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-2 footer-links">
+          <h4>首页</h4>
+          <ul>
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">平台服务</a></li>
+            <li><a href="#">用户评价</a></li>
+            <li><a href="#">最新周边</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-2 footer-links">
+          <h4>公共信件</h4>
+          <ul>
+            <li><a href="#">学业</a></li>
+            <li><a href="#">事业</a></li>
+            <li><a href="#">家庭</a></li>
+            <li><a href="#">爱情</a></li>
+            <li><a href="#">娱乐</a></li>
+            <li><a href="#">其他</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-2 footer-links">
+          <h4>商店</h4>
+          <ul>
+            <li><a href="#">明信片</a></li>
+            <li><a href="#">信封</a></li>
+            <li><a href="#">购物车</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</footer>
+
 <!-- back to top btn -->
 <button class="ttop" href="#" type="button" id="gotop">TOP</button>
 <a href="login.html"><button class="loginin"  type="button">LOGIN</button></a>
+
 
 </body>
 </html>

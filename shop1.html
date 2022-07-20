@@ -13,7 +13,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="css/style2.css">
         <script src="js/homep.js"></script>
 
@@ -21,7 +20,6 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
         <style>
             html{
@@ -49,18 +47,18 @@
                 justify-content: end;
             }
             .login{
-                width: 8em;
-                color:white;
-                background-color: chocolate;
-                border-radius: 10em;
-                padding-left:0.2em ;
-                padding-right: em;
-                margin-left: 2em;
-                margin-right:2em ;
-                margin-top: 1em;
-                border: none;
-                transition:All 0.4s ease-in-out;
-            }
+          width: 8em;
+          color:white;
+          background-color: chocolate;
+          border-radius: 10em;
+          padding-left:0.2em ;
+          padding-right: em;
+          margin-left: 2em;
+          margin-right:2em ;
+          margin-top: 1em;
+          border: none;
+          transition:All 0.4s ease-in-out;
+      }
             .login:hover{
                 background-color: rgb(219, 137, 79);
                 transition:All 0.4s ease-in-out;
@@ -72,13 +70,27 @@
                 color:chocolate ;
             }
 
+            .rounded-pill:hover{
+                border-radius: 50%;
+                width:40px;
+                border: 2px solid chocolate;
+            }
+            @media screen and (max-width:1600px){
+                .profile{
+                    display: none;
+                }
+            }
+
             @media screen and (max-width:1000px){
                 .navbar{
-                background-color: white;
-                height: auto;
-                }
-                .login{
+                        background-color: white;
+                        height: auto;
+                    }
+                .login,.rounded-pill{
                     display: none;
+                }
+                .profile{
+                    display: block;
                 }
                 .collapse{
                     justify-content: center;
@@ -93,11 +105,12 @@
             }
             .kiki-pri{
                 background-size:120%;
-		        height: auto;
-                background:url(img/shop.jpeg) no-repeat;
+		            height: auto;
+                background:url(img/shop.jpg) no-repeat;
                 background-color: antiquewhite;
 
             }
+
             .nav-link:hover{
                 color: chocolate;
                 font-weight: bolder;
@@ -112,6 +125,7 @@
                 border-bottom: .25rem solid transparent;
                 border-bottom-color: chocolate;
             }
+            /*--------------footer---------------*/
             .footer {
               color: #fff;
               background: url("img/footer.jpg") top center no-repeat;
@@ -144,6 +158,7 @@
                   <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="shop1.html" id="active">商店</a>
                   </li>
+
                 </ul>
 
               </div>
@@ -153,8 +168,8 @@
           </form>
       </nav>
 
-
         <!------------------------题头-------------------->
+        <div id="header">
         <div class="header-content-pri">
             <!-- .container -->
             <div class="hee-pri">
@@ -162,10 +177,9 @@
                 <div class="kiki-pri row header-row">
                      <div class="bea col-sm-5 col-md-4 col-lg-offset-1 header-img">
                         <div class="carousel-slider header-slider animation" data-animation="animation-fade-in-down">
-
                         </div>
                     </div>
-                    <div class="aa col-lg-7">
+                    <div class="col-lg-7">
                         <div class="header-txt-pri">
                           <h1>TimeStamp</h1>
                             <h1>商店</h1>
@@ -176,14 +190,14 @@
                 <!-- .row end -->
             </div>
         </div>
-
+      </div>
         <br>
         <br>
         <br>
         <br>
         <br>
 
-<div class="container-fluid text-center p-0">
+<div class="container-fluid text-center">
       <button type="button" class="btn border-dark" onclick="timestampletter()">实体信</button>
       <button type="button" class="btn border-dark" onclick="postcard()">明信片</button>
 </div>
@@ -192,12 +206,11 @@
 <br>
 <br>
 
-<div class="pb-5">
-  <div class="container w3-container w3-center w3-animate-bottom" id="letter">
+  <div class="container animated animatedFadeInUp fadeInUp" id="letter">
     <div class="row">
       <div class="col-6 col-sm-6 col-md-6 mb-4 col-lg-4">
         <div class="product-item">
-          <a href="shop-single.html" class="product-img">
+          <a href="shop1.html" class="product-img">
             <img src="img/letter1.jpg" alt="Image" class="img-fluid w-100 mb-3 img-thumbnail shadow rounded-0">
           </a>
           <h3 class="title"><a href="#">风与纸片人</a></h3>
@@ -208,7 +221,7 @@
       </div>
       <div class="col-6 col-sm-6 col-md-6 mb-4 col-lg-4">
         <div class="product-item">
-          <a href="shop-single.html" class="product-img">
+          <a href="shop1.html" class="product-img">
             <img src="img/letter2.jpg" alt="Image" class="img-fluid w-100 mb-3 img-thumbnail shadow rounded-0">
           </a>
           <h3 class="title"><a href="#">长歌与行</a></h3>
@@ -219,7 +232,7 @@
       </div>
       <div class="col-6 col-sm-6 col-md-6 mb-4 col-lg-4">
         <div class="product-item">
-          <a href="shop-single.html" class="product-img">
+          <a href="shop1.html" class="product-img">
             <img src="img/letter3.jpg" alt="Image" class="img-fluid w-100 mb-3 img-thumbnail shadow rounded-0">
           </a>
           <h3 class="title"><a href="#">岛屿云烟</a></h3>
@@ -230,7 +243,7 @@
       </div>
       <div class="col-6 col-sm-6 col-md-6 mb-4 col-lg-4">
         <div class="product-item">
-          <a href="shop-single.html" class="product-img">
+          <a href="shop1.html" class="product-img">
             <img src="img/letter4.jpg" alt="Image" class="img-fluid w-100 mb-3 img-thumbnail shadow rounded-0">
           </a>
           <h3 class="title"><a href="#">但许星辰月</a></h3>
@@ -241,7 +254,7 @@
       </div>
       <div class="col-6 col-sm-6 col-md-6 mb-4 col-lg-4">
         <div class="product-item">
-          <a href="shop-single.html" class="product-img">
+          <a href="shop1.html" class="product-img">
             <span class="custom-badge sale">推荐</span>
             <img src="img/letter5.jpg" alt="Image" class="img-fluid w-100 mb-3 img-thumbnail shadow rounded-0">
           </a>
@@ -253,7 +266,7 @@
       </div>
       <div class="col-6 col-sm-6 col-md-6 mb-4 col-lg-4">
         <div class="product-item">
-          <a href="shop-single.html" class="product-img">
+          <a href="shop1.html" class="product-img">
             <span class="custom-badge sale">推荐</span>
             <img src="img/letter6.jpg" alt="Image" class="img-fluid w-100 mb-3 img-thumbnail shadow rounded-0">
           </a>
@@ -265,7 +278,7 @@
       </div>
       <div class="col-6 col-sm-6 col-md-6 mb-4 col-lg-4">
         <div class="product-item">
-          <a href="shop-single.html" class="product-img">
+          <a href="shop1.html" class="product-img">
             <span class="custom-badge sale">推荐</span>
             <img src="img/letter7.jpg" alt="Image" class="img-fluid w-100 mb-3 img-thumbnail shadow rounded-0">
           </a>
@@ -277,7 +290,7 @@
       </div>
       <div class="col-6 col-sm-6 col-md-6 mb-4 col-lg-4">
         <div class="product-item">
-          <a href="shop-single.html" class="product-img">
+          <a href="shop1.html" class="product-img">
             <span class="custom-badge sale">推荐</span>
             <img src="img/letter8.jpg" alt="Image" class="img-fluid w-100 mb-3 img-thumbnail shadow rounded-0">
           </a>
@@ -289,7 +302,7 @@
       </div>
       <div class="col-6 col-sm-6 col-md-6 mb-4 col-lg-4">
         <div class="product-item">
-          <a href="shop-single.html" class="product-img">
+          <a href="shop1.html" class="product-img">
             <span class="custom-badge sale">推荐</span>
             <img src="img/letter9.jpg" alt="Image" class="img-fluid w-100 mb-3 img-thumbnail shadow rounded-0">
           </a>
@@ -301,7 +314,7 @@
       </div>
       <div class="col-6 col-sm-6 col-md-6 mb-4 col-lg-4">
         <div class="product-item">
-          <a href="shop-single.html" class="product-img">
+          <a href="shop1.html" class="product-img">
             <span class="custom-badge sale">推荐</span>
             <img src="img/letter10.jpg" alt="Image" class="img-fluid w-100 mb-3 img-thumbnail shadow rounded-0">
           </a>
@@ -313,7 +326,7 @@
       </div>
       <div class="col-6 col-sm-6 col-md-6 mb-4 col-lg-4">
         <div class="product-item">
-          <a href="shop-single.html" class="product-img">
+          <a href="shop1.html" class="product-img">
             <span class="custom-badge sale">推荐</span>
             <img src="img/letter11.jpg" alt="Image" class="img-fluid w-100 mb-3 img-thumbnail shadow rounded-0">
           </a>
@@ -325,7 +338,7 @@
       </div>
       <div class="col-6 col-sm-6 col-md-6 mb-4 col-lg-4">
         <div class="product-item">
-          <a href="shop-single.html" class="product-img">
+          <a href="shop1.html" class="product-img">
             <span class="custom-badge sale">推荐</span>
             <img src="img/letter12.jpg" alt="Image" class="img-fluid w-100 mb-3 img-thumbnail shadow rounded-0">
           </a>
@@ -337,14 +350,14 @@
       </div>
     </div>
   </div>
-</div>
+
 
   <div class="pb-5">
-    <div class="container w3-container w3-center w3-animate-bottom" id="card">
+    <div class="container animated animatedFadeInUp fadeInUp" id="card">
       <div class="row">
         <div class="col-6 col-sm-6 col-md-6 mb-4 col-lg-4">
           <div class="product-item">
-            <a href="shop-single.html" class="product-img">
+            <a href="shop1.html" class="product-img">
               <img src="img/postcard1.png" alt="Image" class="img-fluid w-100 mb-3 img-thumbnail shadow rounded-0">
             </a>
             <h3 class="title"><a href="#">想星星想饿了</a></h3>
@@ -355,7 +368,7 @@
         </div>
         <div class="col-6 col-sm-6 col-md-6 mb-4 col-lg-4">
           <div class="product-item">
-            <a href="shop-single.html" class="product-img">
+            <a href="shop1.html" class="product-img">
               <img src="img/postcard2.jpg" alt="Image" class="img-fluid w-100 mb-3 img-thumbnail shadow rounded-0">
             </a>
             <h3 class="title"><a href="#">方里白茶</a></h3>
@@ -366,7 +379,7 @@
         </div>
         <div class="col-6 col-sm-6 col-md-6 mb-4 col-lg-4">
           <div class="product-item">
-            <a href="shop-single.html" class="product-img">
+            <a href="shop1.html" class="product-img">
               <img src="img/postcard3.png" alt="Image" class="img-fluid w-100 mb-3 img-thumbnail shadow rounded-0">
             </a>
             <h3 class="title"><a href="#">风与你皆过</a></h3>
@@ -377,7 +390,7 @@
         </div>
         <div class="col-6 col-sm-6 col-md-6 mb-4 col-lg-4">
           <div class="product-item">
-            <a href="shop-single.html" class="product-img">
+            <a href="shop1.html" class="product-img">
               <img src="img/postcard4.jpg" alt="Image" class="img-fluid w-100 mb-3 img-thumbnail shadow rounded-0">
             </a>
             <h3 class="title"><a href="#">半口仙气</a></h3>
@@ -388,7 +401,7 @@
         </div>
         <div class="col-6 col-sm-6 col-md-6 mb-4 col-lg-4">
           <div class="product-item">
-            <a href="shop-single.html" class="product-img">
+            <a href="shop1.html" class="product-img">
               <span class="custom-badge sale">推荐</span>
               <img src="img/postcard5.jpg" alt="Image" class="img-fluid w-100 mb-3 img-thumbnail shadow rounded-0">
             </a>
@@ -400,7 +413,7 @@
         </div>
         <div class="col-6 col-sm-6 col-md-6 mb-4 col-lg-4">
           <div class="product-item">
-            <a href="shop-single.html" class="product-img">
+            <a href="shop1.html" class="product-img">
               <span class="custom-badge sale">推荐</span>
               <img src="img/postcard6.jpg" alt="Image" class="img-fluid w-100 mb-3 img-thumbnail shadow rounded-0">
             </a>
@@ -412,7 +425,7 @@
         </div>
         <div class="col-6 col-sm-6 col-md-6 mb-4 col-lg-4">
           <div class="product-item">
-            <a href="shop-single.html" class="product-img">
+            <a href="shop1.html" class="product-img">
               <span class="custom-badge sale">推荐</span>
               <img src="img/postcard7.png" alt="Image" class="img-fluid w-100 mb-3 img-thumbnail shadow rounded-0">
             </a>
@@ -423,7 +436,7 @@
           </div>
         </div>  <div class="col-6 col-sm-6 col-md-6 mb-4 col-lg-4">
             <div class="product-item">
-              <a href="shop-single.html" class="product-img">
+              <a href="shop1.html" class="product-img">
                 <span class="custom-badge sale">推荐</span>
                 <img src="img/postcard8.png" alt="Image" class="img-fluid w-100 mb-3 img-thumbnail shadow rounded-0">
               </a>
@@ -434,7 +447,7 @@
             </div>
           </div>  <div class="col-6 col-sm-6 col-md-6 mb-4 col-lg-4">
               <div class="product-item">
-                <a href="shop-single.html" class="product-img">
+                <a href="shop1.html" class="product-img">
                   <span class="custom-badge sale">推荐</span>
                   <img src="img/postcard9.png" alt="Image" class="img-fluid w-100 mb-3 img-thumbnail shadow rounded-0">
                 </a>

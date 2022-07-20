@@ -49,18 +49,18 @@
                 justify-content: end;
             }
             .login{
-                width: 8em;
-                color:white;
-                background-color: chocolate;
-                border-radius: 10em;
-                padding-left:0.2em ;
-                padding-right: em;
-                margin-left: 2em;
-                margin-right:2em ;
-                margin-top: 1em;
-                border: none;
-                transition:All 0.4s ease-in-out;
-            }
+          width: 8em;
+          color:white;
+          background-color: chocolate;
+          border-radius: 10em;
+          padding-left:0.2em ;
+          padding-right: em;
+          margin-left: 2em;
+          margin-right:2em ;
+          margin-top: 1em;
+          border: none;
+          transition:All 0.4s ease-in-out;
+      }
             .login:hover{
                 background-color: rgb(219, 137, 79);
                 transition:All 0.4s ease-in-out;
@@ -71,14 +71,27 @@
             .navbar-toggler:focus{
                 color:chocolate ;
             }
+            .rounded-pill:hover{
+              border-radius: 50%;
+              width:40px;
+              border: 2px solid chocolate;
+            }
+            @media screen and (max-width:1600px){
+              .profile{
+                  display: none;
+                }
+            }
 
             @media screen and (max-width:1000px){
-              .navbar{
-                background-color: white;
-                height: auto;
-            }
-                .login{
+                .navbar{
+                      background-color: white;
+                      height: auto;
+                  }
+                .login,.rounded-pill{
                     display: none;
+                }
+                .profile{
+                  display: block;
                 }
                 .collapse{
                     justify-content: center;
@@ -138,7 +151,7 @@
                       <a class="nav-link " aria-current="page" href="public.html">公开信件</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="shop1.html">商店</a>
+                      <a class="nav-link" aria-current="page" href="shop1.html" id="active">商店</a>
                     </li>
                   </ul>
 
@@ -167,7 +180,7 @@
             </svg>
           </span>
           <h2 class="display-3 text-black" style="letter-spacing: 5px;">感谢惠顾！</h2>
-          <p class="lead mb-5" style="letter-spacing: 5px;">您的订单已收到，将按时为您安排寄送。</p>
+          <p class="lead mb-5" style="letter-spacing: 5px;">您的信件已收到，将按时为您安排寄送。</p>
           <p><a href="shop1.html" class="btn btn-md btn-outline-black border-dark">回到商店</a></p>
         </div>
         </div>
